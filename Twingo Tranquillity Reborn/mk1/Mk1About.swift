@@ -131,8 +131,8 @@ struct Mk1About: View {
                                     .padding(5)
                                 
                                 Text("""
-                        Le Quément a ales un design al lui Jean-Pierre Ploué pentru a dezvolta versiunea de serie. El a prelungit prototipul original și a adăugat o  inedită parte frontală, ce amintește de un "zâmbet".
-                        """).frame(maxWidth: 370, maxHeight: 190)
+                        Etajera portbagajului era atașată pe interiorul hayonului și se ridica odată cu acesta sau putea fi fixată cu cleme deasupra lunetei când nu era necesară.
+                        """).frame(maxWidth: 360, maxHeight: 190)
                                     .lineSpacing(5)
                                     .multilineTextAlignment(.leading)
                                     .fontDesign(.rounded)

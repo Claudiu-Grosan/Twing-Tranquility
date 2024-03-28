@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69326EB92BAB145700C18FCE /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69326EB82BAB145700C18FCE /* Row.swift */; };
+		699F6DFF2BAD86D40090EF8C /* Mk1About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F6DFE2BAD86D40090EF8C /* Mk1About.swift */; };
 		69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */; };
 		69BE9B7C2BA5DEB0000D9236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */; };
 		69BE9B7E2BA5DEB2000D9236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BE9B7D2BA5DEB2000D9236 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		69BE9B8B2BA5DEB3000D9236 /* Twingo_Tranquillity_RebornTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B8A2BA5DEB3000D9236 /* Twingo_Tranquillity_RebornTests.swift */; };
 		69BE9B952BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B942BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITests.swift */; };
 		69BE9B972BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B962BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITestsLaunchTests.swift */; };
+		69BE9BA42BA5DEFF000D9236 /* TwingoMk3_pg1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9BA32BA5DEFF000D9236 /* TwingoMk3_pg1.swift */; };
+		69BE9BA72BA5E08A000D9236 /* TwingoListDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9BA62BA5E08A000D9236 /* TwingoListDef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69326EB82BAB145700C18FCE /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		699F6DFE2BAD86D40090EF8C /* Mk1About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1About.swift; sourceTree = "<group>"; };
 		69BE9B762BA5DEB0000D9236 /* Twingo Tranquillity Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twingo Tranquillity Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twingo_Tranquillity_RebornApp.swift; sourceTree = "<group>"; };
 		69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		69BE9B902BA5DEB3000D9236 /* Twingo Tranquillity RebornUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twingo Tranquillity RebornUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BE9B942BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twingo_Tranquillity_RebornUITests.swift; sourceTree = "<group>"; };
 		69BE9B962BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twingo_Tranquillity_RebornUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69BE9BA32BA5DEFF000D9236 /* TwingoMk3_pg1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwingoMk3_pg1.swift; sourceTree = "<group>"; };
+		69BE9BA62BA5E08A000D9236 /* TwingoListDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwingoListDef.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		699F6E012BAD8A810090EF8C /* mk1 */ = {
+			isa = PBXGroup;
+			children = (
+				699F6DFE2BAD86D40090EF8C /* Mk1About.swift */,
+			);
+			path = mk1;
+			sourceTree = "<group>";
+		};
 		69BE9B6D2BA5DEB0000D9236 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +110,12 @@
 		69BE9B782BA5DEB0000D9236 /* Twingo Tranquillity Reborn */ = {
 			isa = PBXGroup;
 			children = (
+				69BE9BA52BA5E06D000D9236 /* TwingoData */,
+				699F6E012BAD8A810090EF8C /* mk1 */,
 				69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */,
 				69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */,
+				69326EB82BAB145700C18FCE /* Row.swift */,
+				69BE9BA32BA5DEFF000D9236 /* TwingoMk3_pg1.swift */,
 				69BE9B7D2BA5DEB2000D9236 /* Assets.xcassets */,
 				69BE9B7F2BA5DEB2000D9236 /* Preview Content */,
 			);
@@ -125,6 +145,14 @@
 				69BE9B962BA5DEB3000D9236 /* Twingo_Tranquillity_RebornUITestsLaunchTests.swift */,
 			);
 			path = "Twingo Tranquillity RebornUITests";
+			sourceTree = "<group>";
+		};
+		69BE9BA52BA5E06D000D9236 /* TwingoData */ = {
+			isa = PBXGroup;
+			children = (
+				69BE9BA62BA5E08A000D9236 /* TwingoListDef.swift */,
+			);
+			path = TwingoData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BE9B7C2BA5DEB0000D9236 /* ContentView.swift in Sources */,
+				69BE9BA72BA5E08A000D9236 /* TwingoListDef.swift in Sources */,
 				69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */,
+				699F6DFF2BAD86D40090EF8C /* Mk1About.swift in Sources */,
+				69326EB92BAB145700C18FCE /* Row.swift in Sources */,
+				69BE9BA42BA5DEFF000D9236 /* TwingoMk3_pg1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

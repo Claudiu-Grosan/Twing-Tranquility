@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Row: View {
-    @State private var isPresented = false //variabila necesara pt butoanele folosite
+    @State private var isPresented1 = false //variabila necesara pt butoanele folosite
+    @State private var isPresented2 = false
     var body: some View {
         //VStack to group everything
             VStack{
@@ -29,9 +30,9 @@ struct Row: View {
                     //HStack to group the rectangles and items
                     HStack{
                         //ZStack to be able to put items over other items
-                        ZStack{
+
                             Button(action:{
-                                isPresented.toggle() //button action/animation
+                                isPresented1.toggle() //button action/animation
                             }){
                                 //Button design basically, here a ZStack to once again overlap shit
                                 ZStack{
@@ -48,18 +49,35 @@ struct Row: View {
                                             .frame(width: 100.0, height: 75.0)
                                         Text("Despre")
                                             .foregroundColor(Color.white)
+                                        }
                                     }
                                 }
-                            }
-                        }
-                        .fullScreenCover(isPresented: $isPresented, content: Mk1About.init) //Necessary to be able to open future pages of the project
+                        .fullScreenCover(isPresented: $isPresented1, content: Mk1About.init)
+                        //Necessary to be able to open future pages of the project
                         
-                        //Place holder rectangles, will be used
-                        Rectangle()
-                            .frame(width: 200, height: 125)
-                            .cornerRadius(23)
-                            .shadow(radius: 10)
-                            .padding(5)
+                        
+                            Button(action:{
+                                isPresented2.toggle() //button action/animation
+                            }){
+                                //Button design basically, here a ZStack to once again overlap shit
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: 200, height: 125)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                        .foregroundColor(Color.customRed)
+                                    VStack{
+                                        Image("mk1eng")
+                                            .resizable()
+                                            .frame(width: 106.0, height: 66.0)
+                                            .cornerRadius(20)
+                                        Text("Specificații tehnice")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                        }
+                        .fullScreenCover(isPresented: $isPresented2, content: Mk1Specs.init)
                         Rectangle()
                             .frame(width: 200, height: 125)
                             .cornerRadius(23)
@@ -74,7 +92,7 @@ struct Row: View {
                     HStack{
                         ZStack{
                             Button(action:{
-                                isPresented.toggle()
+                                isPresented2.toggle()
                             }){
                                 Rectangle()
                                     .frame(width: 200, height: 125)
@@ -82,7 +100,7 @@ struct Row: View {
                                     .shadow(radius: 10)
                                     .padding(5)
                             }
-                            .fullScreenCover(isPresented: $isPresented, content: TwingoMk3_pg1.init)
+                            .fullScreenCover(isPresented: $isPresented2, content: TwingoMk3_pg1.init)
                         }
                         //palceholder rectangle
                         Rectangle()

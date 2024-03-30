@@ -23,7 +23,6 @@ struct Mk1About: View {
             .frame(maxWidth: 350, alignment: .leading)
             .buttonStyle(.bordered)
             Text("Despre primul Twingo")
-                //.underline(color: Color.customRed)
                 .foregroundColor(Color.customRed)
                 .font(.title)
                 .fontWeight(.black)

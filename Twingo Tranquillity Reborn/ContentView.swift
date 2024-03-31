@@ -4,12 +4,14 @@
 //
 //  Created by Clau on 3/9/24.
 //
-
+import AVKit//needed for video player
 import SwiftUI
 struct ContentView: View {
+    @State private var test=true
+    let player=AVPlayer(url:Bundle.main.url(forResource: "liberte", withExtension: "mp4")!)
     var body: some View {
         //This right here are the tabs I used for the app's main menu
-        TabView{
+        TabView(selection: $test){
             VStack{
                 Text("""
                         Bun venit la bordul "Twingo Tranquility"!
@@ -19,10 +21,31 @@ struct ContentView: View {
                     .font(.system(size:26))
                     .fontWeight(.black)
                     .fontDesign(.rounded)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: 350, maxHeight: 200)
+                VideoPlayer(player: player)
+                    .frame(width: 238, height: 423)
+                    .cornerRadius(10)
+                    .disabled(true)
+                
+                    
             }
+            .onAppear{
+                player.play()
+                //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that time
+                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
+                                                               object: player.currentItem,
+                                                               queue: nil) { notif in // 3
+                            player.seek(to: .zero) // 4
+                            player.play() // 5
+                        }
+                    }
+                
+            .onDisappear(){
+                player.pause()
+            }
+            .frame(height: 700)
             .tabItem {
-                Label("Acasă", systemImage: "house" )
+                    Label("Acasă", systemImage: "house" )
             }
             
             Row()

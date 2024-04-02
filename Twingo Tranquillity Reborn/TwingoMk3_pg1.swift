@@ -1,6 +1,4 @@
-/*
- One of the pages for the twingo mk3; it should lead to an about page and maybe more; v0.0.1
- */
+
 //  Created by Clau on 3/9/24.
 
 import SwiftUI
@@ -43,8 +41,13 @@ struct TwingoMk3_pg1: View {
                 .shadow(radius:5)
             Divider()
                 .frame(height:40)
-            
-            Button("Check prices", systemImage: "link") {
+            Text("""
+            V-am stârnit interesul? Verificați prețul în timp real pe platforma Olx
+            """)
+            .foregroundColor(Color.customPurple)
+            .fontDesign(.rounded)
+            .frame(maxWidth: 350, alignment: .leading)
+            Button("Verifică prețul", systemImage: "link") {
                 openURL(URL(string: "https://www.olx.ro/oferte/q-renault-twingo-3/?currency=EUR&search%5Border%5D=filter_float_price:asc&search%5Bfilter_float_price:from%5D=2500&search%5Bfilter_float_year:from%5D=2014")!)
             }
             .buttonStyle(.bordered)

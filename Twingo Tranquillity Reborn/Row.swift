@@ -1,15 +1,13 @@
-//
 //  Row.swift
 //  Twingo Tranquillity Reborn
-//
 //  Created by Clau on 3/20/24.
-//
 
 import SwiftUI
 
 struct Row: View {
     @State private var isPresented1 = false //variabila necesara pt butoanele folosite
     @State private var isPresented2 = false
+    @State private var isPresented3 = false
     var body: some View {
         //VStack to group everything
             VStack{
@@ -86,21 +84,34 @@ struct Row: View {
                     }
                         })
                 
+                
+                Text("Generația 2")
+                    .font(.subheadline)
+                    .frame(maxWidth: 350, alignment: .leading)
                 //2nd Scroll View
                 ScrollView(.horizontal, showsIndicators: false, content:{
                     //Same Shit, copy paste :3
                     HStack{
                         ZStack{
                             Button(action:{
-                                isPresented2.toggle()
+                                isPresented3.toggle()
                             }){
-                                Rectangle()
-                                    .frame(width: 200, height: 125)
-                                    .cornerRadius(23)
-                                    .shadow(radius: 10)
-                                    .padding(5)
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: 200, height: 125)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Image("mk2")
+                                            .resizable()
+                                            .frame(width: 100.0, height: 75.0)
+                                        Text("Despre")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
                             }
-                            .fullScreenCover(isPresented: $isPresented2, content: TwingoMk3_pg1.init)
+                            .fullScreenCover(isPresented: $isPresented3, content: Mk2About.init)
                         }
                         //palceholder rectangle
                         Rectangle()

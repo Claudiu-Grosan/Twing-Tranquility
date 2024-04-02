@@ -1,9 +1,7 @@
-//
 //  ContentView.swift
 //  Twingo Tranquillity
-//
 //  Created by Clau on 3/9/24.
-//
+
 import AVKit//needed for video player
 import SwiftUI
 struct ContentView: View {

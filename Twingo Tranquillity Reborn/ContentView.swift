@@ -8,11 +8,24 @@ import AVKit//needed for video player
 import SwiftUI
 struct ContentView: View {
     @State private var test=true
+    @State private var sound="speaker.wave.3"
     let player=AVPlayer(url:Bundle.main.url(forResource: "liberte", withExtension: "mp4")!)
     var body: some View {
         //This right here are the tabs I used for the app's main menu
         TabView(selection: $test){
             VStack{
+                Button ("", systemImage: sound ){
+                    test.toggle()
+                    player.isMuted.toggle()//Button that mutes the playback of the main video
+                    if test==true{
+                        sound="speaker.wave.3"
+                    }
+                    else{
+                        sound="speaker.slash.fill"
+                    }
+                }
+                .frame(maxWidth: 350, alignment: .trailing)
+                .buttonStyle(.bordered)
                 Text("""
                         Bun venit la bordul "Twingo Tranquility"!
                         
@@ -31,7 +44,7 @@ struct ContentView: View {
             }
             .onAppear{
                 player.play()
-                //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that time
+                //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that timeh
                 NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
                                                                object: player.currentItem,
                                                                queue: nil) { notif in // 3

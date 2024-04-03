@@ -5,9 +5,10 @@
 import SwiftUI
 
 struct Row: View {
-    @State private var isPresented1 = false //variabila necesara pt butoanele folosite
+    @State private var isPresented1 = false //variabile necesara pt butoanele folosite
     @State private var isPresented2 = false
     @State private var isPresented3 = false
+    @State private var isPresented4 = false
     var body: some View {
         //VStack to group everything
             VStack{
@@ -76,11 +77,27 @@ struct Row: View {
                                 }
                         }
                         .fullScreenCover(isPresented: $isPresented2, content: Mk1Specs.init)
-                        Rectangle()
-                            .frame(width: 200, height: 125)
-                            .cornerRadius(23)
-                            .shadow(radius: 10)
-                            .padding(5)
+                        Button(action:{
+                            isPresented3.toggle() //button action/animation
+                        }){
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 200, height: 125)
+                                    .cornerRadius(23)
+                                    .shadow(radius: 10)
+                                    .padding(5)
+                                    .foregroundColor(Color.customRed)
+                                VStack{
+                                    Image("funnymk1")
+                                        .resizable()
+                                        .frame(width: 106.0, height: 66.0)
+                                        .cornerRadius(20)
+                                    Text("Verificare preț")
+                                        .foregroundColor(Color.white)
+                                }
+                            }
+                        }
+                        .fullScreenCover(isPresented: $isPresented3, content: Mk1Price.init)
                     }
                         })
                 
@@ -94,7 +111,7 @@ struct Row: View {
                     HStack{
                         ZStack{
                             Button(action:{
-                                isPresented3.toggle()
+                                isPresented4.toggle()
                             }){
                                 ZStack{
                                     Rectangle()
@@ -111,7 +128,7 @@ struct Row: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented3, content: Mk2About.init)
+                            .fullScreenCover(isPresented: $isPresented4, content: Mk2About.init)
                         }
                         //palceholder rectangle
                         Rectangle()

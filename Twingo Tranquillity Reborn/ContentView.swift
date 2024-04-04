@@ -10,6 +10,7 @@ struct ContentView: View {
     let player=AVPlayer(url:Bundle.main.url(forResource: "liberte", withExtension: "mp4")!)
     var body: some View {
         //This right here are the tabs I used for the app's main menu
+        //var used here to check if the home tab is selected
         TabView(selection: $test){
             VStack{
                 Button ("", systemImage: sound ){
@@ -43,13 +44,12 @@ struct ContentView: View {
             .onAppear{
                 player.play()
                 //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that timeh
-                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
-                                                               object: player.currentItem,
-                                                               queue: nil) { notif in // 3
+                NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil) {
+                            notif in // 3
                             player.seek(to: .zero) // 4
                             player.play() // 5
-                        }
                     }
+                }
                 
             .onDisappear(){
                 player.pause()

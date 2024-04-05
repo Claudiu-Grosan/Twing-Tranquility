@@ -9,6 +9,7 @@ struct Row: View {
     @State private var isPresented2 = false
     @State private var isPresented3 = false
     @State private var isPresented4 = false
+    @State private var isPresented5 = false
     var body: some View {
         //VStack to group everything
             VStack{
@@ -45,7 +46,7 @@ struct Row: View {
                                     VStack{
                                         Image("mk1")
                                             .resizable()
-                                            .frame(width: 100.0, height: 75.0)
+                                            .frame(width: 120.0, height: 90.0)
                                         Text("Despre")
                                             .foregroundColor(Color.white)
                                         }
@@ -123,7 +124,7 @@ struct Row: View {
                                     VStack{
                                         Image("mk2")
                                             .resizable()
-                                            .frame(width: 100.0, height: 75.0)
+                                            .frame(width: 120.0, height: 89.0)
                                         Text("Despre")
                                             .foregroundColor(Color.white)
                                     }
@@ -131,12 +132,52 @@ struct Row: View {
                             }
                             .fullScreenCover(isPresented: $isPresented4, content: Mk2About.init)
                         }
-                        //palceholder rectangle
-                        Rectangle()
-                            .frame(width: 200, height: 125)
-                            .cornerRadius(23)
-                            .shadow(radius: 10)
-                            .padding(5)
+                        ZStack{
+                            Button(action:{
+                                isPresented5.toggle()
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .fill(Gradient(colors:[.customBlue, .customPink]))//gradient to show that it includes both pre and post facelift
+                                        .frame(width: 200, height: 125)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Image("mk2Engine")
+                                            .resizable()
+                                            .frame(width: 110.0, height: 75.0)
+                                            .cornerRadius(20)
+                                        Text("Specificații tehnice")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                            }
+                            .fullScreenCover(isPresented: $isPresented5, content: Mk2Specs.init)
+                        }
+                        ZStack{
+                            Button(action:{
+                                isPresented5.toggle()
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .fill(Gradient(colors:[.customBlue, .customPink]))
+                                        .frame(width: 200, height: 125)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Image("mk2Engine")
+                                            .resizable()
+                                            .frame(width: 110.0, height: 75.0)
+                                            .cornerRadius(20)
+                                        Text("Verificare preț")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                            }
+                            .fullScreenCover(isPresented: $isPresented5, content: Mk2Specs.init)
+                        }
                     }
                 })
             }

@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Mk1Specs: View {
     @Environment(\.dismiss) var dismiss
-    @State private var showContent = false
     var body: some View {
         
         VStack{
@@ -19,6 +18,8 @@ struct Mk1Specs: View {
             }
             .frame(maxWidth: 350, alignment: .leading)
             .buttonStyle(.bordered)
+            Spacer()
+                .frame(height:35)
             Text("Specificații pentru prima generație de Twingo")
                 .foregroundColor(Color.customGreen)
                 .font(.title)
@@ -44,7 +45,6 @@ struct Mk1Specs: View {
                         }
                     }
                 }
-                .fullScreenCover(isPresented: $showContent, content: Mk1About.init)//De inlocuit cu un now view pt fiecare motor in parte
                 
                 VStack{
                     Spacer()
@@ -98,7 +98,6 @@ struct Mk1Specs: View {
                         }
                     }
                 }
-                .fullScreenCover(isPresented: $showContent, content: Mk1About.init)//De inlocuit cu un now view pt fiecare motor in parte
                 
                 VStack{
                     Spacer()

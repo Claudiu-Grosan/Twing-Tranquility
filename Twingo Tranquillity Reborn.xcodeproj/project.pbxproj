@@ -12,6 +12,7 @@
 		697B56DB2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B56DA2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift */; };
 		698E54032BBC4A1700E2B470 /* Mk1Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E54022BBC4A1700E2B470 /* Mk1Price.swift */; };
 		698E54082BBC4DF100E2B470 /* Mk2About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E54072BBC4DF100E2B470 /* Mk2About.swift */; };
+		6993573C2BC075C9001AB02C /* Mk2Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6993573B2BC075C9001AB02C /* Mk2Specs.swift */; };
 		699F6DFF2BAD86D40090EF8C /* Mk1About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F6DFE2BAD86D40090EF8C /* Mk1About.swift */; };
 		69B553592BB887B900A8E11C /* Mk1Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B553582BB887B900A8E11C /* Mk1Specs.swift */; };
 		69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */; };
@@ -47,6 +48,7 @@
 		697B56DA2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2FaceliftAbout.swift; sourceTree = "<group>"; };
 		698E54022BBC4A1700E2B470 /* Mk1Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Price.swift; sourceTree = "<group>"; };
 		698E54072BBC4DF100E2B470 /* Mk2About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2About.swift; sourceTree = "<group>"; };
+		6993573B2BC075C9001AB02C /* Mk2Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2Specs.swift; sourceTree = "<group>"; };
 		699F6DFE2BAD86D40090EF8C /* Mk1About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1About.swift; sourceTree = "<group>"; };
 		69B553582BB887B900A8E11C /* Mk1Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Specs.swift; sourceTree = "<group>"; };
 		69BE9B762BA5DEB0000D9236 /* Twingo Tranquillity Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twingo Tranquillity Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			children = (
 				697B56D92BBEF1E8005D7827 /* mk2f */,
 				698E54072BBC4DF100E2B470 /* Mk2About.swift */,
+				6993573B2BC075C9001AB02C /* Mk2Specs.swift */,
 			);
 			path = mk2;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				699F6DFF2BAD86D40090EF8C /* Mk1About.swift in Sources */,
 				69326EB92BAB145700C18FCE /* Row.swift in Sources */,
 				698E54082BBC4DF100E2B470 /* Mk2About.swift in Sources */,
+				6993573C2BC075C9001AB02C /* Mk2Specs.swift in Sources */,
 				697B56DB2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift in Sources */,
 				69BE9BA42BA5DEFF000D9236 /* TwingoMk3_pg1.swift in Sources */,
 			);

@@ -40,7 +40,7 @@ struct Row: View {
                                         .cornerRadius(23)
                                         .shadow(radius: 10)
                                         .padding(5)
-                                        .foregroundColor(Color.customRed)
+                                        .foregroundColor(Color.customGreen)
                                     //Yeah, VStack in ZStack in Button, in ZStack, in HStack, in Scroll View 💀
                                     VStack{
                                         Image("mk1")
@@ -65,7 +65,7 @@ struct Row: View {
                                         .cornerRadius(23)
                                         .shadow(radius: 10)
                                         .padding(5)
-                                        .foregroundColor(Color.customRed)
+                                        .foregroundColor(Color.customGreen)
                                     VStack{
                                         Image("mk1eng")
                                             .resizable()
@@ -86,7 +86,7 @@ struct Row: View {
                                     .cornerRadius(23)
                                     .shadow(radius: 10)
                                     .padding(5)
-                                    .foregroundColor(Color.customRed)
+                                    .foregroundColor(Color.customGreen)
                                 VStack{
                                     Image("funnymk1")
                                         .resizable()
@@ -115,6 +115,7 @@ struct Row: View {
                             }){
                                 ZStack{
                                     Rectangle()
+                                        .fill(Gradient(colors:[.customBlue, .customPink]))
                                         .frame(width: 200, height: 125)
                                         .cornerRadius(23)
                                         .shadow(radius: 10)

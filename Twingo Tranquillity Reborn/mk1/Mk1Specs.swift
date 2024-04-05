@@ -20,7 +20,7 @@ struct Mk1Specs: View {
             .frame(maxWidth: 350, alignment: .leading)
             .buttonStyle(.bordered)
             Text("Specificații pentru prima generație de Twingo")
-                .foregroundColor(Color.customRed)
+                .foregroundColor(Color.customGreen)
                 .font(.title)
                 .fontWeight(.black)
                 .fontDesign(.rounded)
@@ -33,7 +33,7 @@ struct Mk1Specs: View {
                             .cornerRadius(23)
                             .shadow(radius: 10)
                             .padding(5)
-                            .foregroundColor(Color.customRed)
+                            .foregroundColor(Color.customGreen)
                         VStack{
                             Image("c3g")
                                 .resizable()
@@ -55,7 +55,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("150 km/h")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     Spacer()
                         .frame(height:10)
                     HStack{
@@ -64,7 +64,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("13.4 (16.4 auto) sec")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     Spacer()
                         .frame(height:10)
                     HStack{
@@ -73,7 +73,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("6 (7.4 auto) l/100 km")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     
                 }
             }
@@ -87,7 +87,7 @@ struct Mk1Specs: View {
                             .cornerRadius(23)
                             .shadow(radius: 10)
                             .padding(5)
-                            .foregroundColor(Color.customRed)
+                            .foregroundColor(Color.customGreen)
                         VStack{
                             Image("d4f")
                                 .resizable()
@@ -109,7 +109,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("168 km/h")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     Spacer()
                         .frame(height:10)
                     HStack{
@@ -118,7 +118,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("11.7 (13.3 auto) sec")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     Spacer()
                         .frame(height:10)
                     HStack{
@@ -127,7 +127,7 @@ struct Mk1Specs: View {
                             .frame(maxWidth: 300, alignment: .center)
                     }
                     Text("5.9 l/100 km")
-                        .foregroundColor(Color.customRed)
+                        .foregroundColor(Color.customGreen)
                     
                 }
             }

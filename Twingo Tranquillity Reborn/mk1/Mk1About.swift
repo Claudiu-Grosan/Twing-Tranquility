@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension Color{
-    public static var customRed:Color{
-        return Color(UIColor(red:168/255, green: 50/255, blue:80/255, alpha: 1.0))
+    public static var customGreen:Color{
+        return Color(UIColor(red:60/255, green: 102/255, blue:93/255, alpha: 1.0))
     }
 }
     
@@ -24,26 +24,39 @@ struct Mk1About: View {
             .buttonStyle(.bordered)
             
             Text("Despre primul Twingo")
-                .foregroundColor(Color.customRed)
+                .foregroundColor(Color.customGreen)
                 .font(.title)
                 .fontWeight(.black)
                 .fontDesign(.rounded)
                 .frame(maxWidth: 350, alignment: .leading)
+            
             ScrollView(.vertical, showsIndicators: false, content: {
-                VStack{
-                    Image("allahTwingo")
-                        .resizable()
-                        .overlay{
-                            Circle().stroke(Color.customRed, lineWidth: 10)
-                        }
-                        .frame(width: 370, height: 370)
-                        .cornerRadius(290)
-                        .padding(10)
+                ScrollView(.horizontal, showsIndicators: false, content:{
+                    HStack{
+                        Image("allahTwingo")
+                            .resizable()
+                            .overlay{
+                                Circle().stroke(Color.customGreen, lineWidth: 10)
+                            }
+                            .frame(width: 370, height: 370)
+                            .cornerRadius(290)
+                            .padding(10)
+                        Image("mk1interior")
+                            .resizable()
+                            .overlay{
+                                Circle().stroke(Color.customGreen, lineWidth: 10)
+                            }
+                            .frame(width: 370, height: 370)
+                            .cornerRadius(290)
+                            .padding(10)
+                    }
+                    .frame(width: 790)
+                })
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack{
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -57,7 +70,7 @@ struct Mk1About: View {
                             }
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -71,7 +84,7 @@ struct Mk1About: View {
                             }
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -88,15 +101,12 @@ struct Mk1About: View {
                         }
                     })
                     
-                }
-                .padding(10)
                 
-                VStack{
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack{
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -111,7 +121,7 @@ struct Mk1About: View {
                             }
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -125,7 +135,7 @@ struct Mk1About: View {
                             }
                             ZStack{
                                 RoundedRectangle(cornerRadius:23)
-                                    .stroke(Color.customRed, lineWidth: 5)
+                                    .stroke(Color.customGreen, lineWidth: 5)
                                     .frame(width: 380, height: 180)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -140,8 +150,6 @@ struct Mk1About: View {
                             }
                         }
                     })
-                }
-                .padding(10)
             })
         }
     }

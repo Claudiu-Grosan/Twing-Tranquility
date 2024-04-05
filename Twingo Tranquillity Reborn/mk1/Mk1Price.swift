@@ -20,7 +20,7 @@ struct Mk1Price: View {
                 Text("Generația întâi de Twingo")
                     .font(.system(size:43))
                     .fontWeight(.black)
-                    .foregroundColor(Color.customRed)
+                    .foregroundColor(Color.customGreen)
                     .fontDesign(.rounded)
                     .frame(maxWidth: 350, maxHeight: 250, alignment: .leading)
                 
@@ -33,7 +33,7 @@ struct Mk1Price: View {
                     .frame(width: 500,height: 350)
                     .clipShape(Circle())
                     .overlay{
-                        Circle().stroke(Color.customRed, lineWidth: 6)
+                        Circle().stroke(Color.customGreen, lineWidth: 6)
                     }
                     .shadow(radius:5)
                 Spacer()
@@ -41,7 +41,7 @@ struct Mk1Price: View {
                 Text("""
                 V-am stârnit interesul? Verificați prețul în timp real pe platforma Olx
                 """)
-                .foregroundColor(Color.customRed)
+                .foregroundColor(Color.customGreen)
                 .fontDesign(.rounded)
                 .frame(maxWidth: 350, alignment: .leading)
                 Spacer()
@@ -50,7 +50,7 @@ struct Mk1Price: View {
                     openURL(URL(string: "https://www.olx.ro/oferte/q-renault-twingo/?currency=EUR&search%5Border%5D=filter_float_price:desc&search%5Bfilter_float_price:from%5D=600&search%5Bfilter_float_price:to%5D=1250")!)
                 }
                 .buttonStyle(.bordered)
-                .tint(.customRed)
+                .tint(.customGreen)
                 .buttonBorderShape(.capsule)
                 .symbolEffect(.bounce, value:5)
                 Divider()

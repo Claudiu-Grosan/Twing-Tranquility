@@ -22,17 +22,32 @@ struct Mk2FaceliftAbout: View {
                 .fontWeight(.black)
                 .fontDesign(.rounded)
                 .frame(maxWidth: 350, alignment: .leading)
+            
             ScrollView(.vertical, showsIndicators: false, content: {
-                
-                VStack{
-                    Image("mk2FaceliftImg")
-                        .resizable(capInsets: EdgeInsets(top:10, leading: 40, bottom: 40, trailing: 50))
-                        .frame(width: 549,height: 343)
-                        .clipShape(Circle())
-                        .overlay{
-                            Circle().stroke(Color.customPink, lineWidth: 6)
+                    
+                    ScrollView(.horizontal, showsIndicators: false, content:{
+                        HStack{
+                            Image("mk2FaceliftImg")
+                                .resizable(capInsets: EdgeInsets(top:20, leading: 30, bottom: 30, trailing: 70))
+                                .scaledToFill()
+                                .frame(width: 390,height: 360)
+                                .clipShape(Circle())
+                                .overlay{
+                                    Circle().stroke(Color.customPink, lineWidth: 6)
+                                }
+                            Image("mk2finterior")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 390,height: 360)
+                                .clipShape(Circle())
+                                .overlay{
+                                    Circle().stroke(Color.customPink, lineWidth: 6)
+                                }
                         }
-                        Spacer()
+                        .padding(.vertical, 20)
+                        .frame(width: 790)
+                    })
+                    Spacer()
                         .frame(height: 20)
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack(alignment: .center){
@@ -69,10 +84,7 @@ struct Mk2FaceliftAbout: View {
                         }
                     })
                     .frame(maxWidth: 390)
-                }
-                .padding(10)
                 
-                VStack{
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack{
                             ZStack{
@@ -108,8 +120,6 @@ struct Mk2FaceliftAbout: View {
                         }
                     })
                     .frame(maxWidth: 390)
-                }
-                .padding(10)
             })
             
         }

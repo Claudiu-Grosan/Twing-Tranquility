@@ -11,7 +11,7 @@ extension Color{
 }
 
 struct TwingoMk3_pg1: View {
-    @Environment(\.openURL) var openURL //dependency to open websites
+    @Environment(\.openURL) var openURL //to open websites
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack{

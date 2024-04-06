@@ -19,13 +19,15 @@ struct Mk1Specs: View {
             .frame(maxWidth: 350, alignment: .leading)
             .buttonStyle(.bordered)
             Spacer()
-                .frame(height:35)
+                .frame(height:55)
             Text("Specificații pentru prima generație de Twingo")
                 .foregroundColor(Color.customGreen)
                 .font(.title)
                 .fontWeight(.black)
                 .fontDesign(.rounded)
                 .frame(maxWidth: 350, alignment: .leading)
+            Spacer()
+                .frame(height:35)
             HStack{
                 HStack{
                     ZStack{

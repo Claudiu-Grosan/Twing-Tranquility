@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Mk1Price: View {
-        @Environment(\.openURL) var openURL //dependency to open websites
+        @Environment(\.openURL) var openURL // to open websites
         @Environment(\.dismiss) var dismiss
         var body: some View {
             VStack{

@@ -1,16 +1,13 @@
-//  Mk2About.swift
+//
+//  Mk2About_iPad.swift
 //  Twingo Tranquillity Reborn
-//  Created by Clau on 4/2/24.
+//
+//  Created by Clau on 4/8/24.
+//
 
 import SwiftUI
 
-extension Color{
-    public static var customBlue:Color{
-        return Color(UIColor(red:21/255, green: 95/255, blue:214/255, alpha: 1.0))
-    }
-}
-
-struct Mk2About: View {
+struct Mk2About_iPad: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         GeometryReader { geometry in
@@ -45,7 +42,7 @@ struct Mk2About: View {
                                         }
                                         .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.49)
                                     Spacer()
-                                        .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.51)
+                                        .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.65)
                                     Spacer()
                                         .frame(width: geometry.size.width*0.03)
                                     Image("mk2interior")
@@ -69,7 +66,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         Text("""
@@ -84,7 +81,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         Text("""
@@ -98,7 +95,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         
@@ -121,7 +118,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         Text("""
@@ -136,7 +133,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         Text("""
@@ -150,7 +147,7 @@ struct Mk2About: View {
                                     ZStack{
                                         RoundedRectangle(cornerRadius:23)
                                             .stroke(Color.customBlue, lineWidth: 5)
-                                            .frame(width: geometry.size.width*0.975, height: geometry.size.height*0.25)
+                                            .frame(width: geometry.size.width*0.9879, height: geometry.size.height*0.25)
                                             .shadow(radius: 10)
                                             .padding(5)
                                         Text("""
@@ -181,5 +178,5 @@ struct Mk2About: View {
 }
 
 #Preview {
-    Mk2About()
+    Mk2About_iPad()
 }

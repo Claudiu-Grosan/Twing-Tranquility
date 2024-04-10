@@ -56,7 +56,7 @@ struct Row: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented1, content: Mk1About.init)
+                        .fullScreenCover(isPresented: $isPresented1, content: Mk1Selection.init)
                         //Necessary to be able to open future pages of the project
                         
                         

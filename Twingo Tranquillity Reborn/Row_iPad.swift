@@ -1,10 +1,13 @@
-//  Row.swift
+//
+//  Row_iPad.swift
 //  Twingo Tranquillity Reborn
-//  Created by Clau on 3/20/24.
-//.frame(width: 200, height: 125)
+//
+//  Created by Clau on 4/10/24.
+//
+
 import SwiftUI
 
-struct Row: View {
+struct Row_iPad: View {
     @State private var isPresented1 = false //variabile necesara pt butoanele folosite
     @State private var isPresented2 = false
     @State private var isPresented3 = false
@@ -41,7 +44,7 @@ struct Row: View {
                             //Button design basically, here a ZStack to once again overlap shit
                             ZStack{
                                 Rectangle()
-                                    .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                    .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                     .cornerRadius(23)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -50,7 +53,7 @@ struct Row: View {
                                 VStack{
                                     Image("mk1")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.23, height:geometry.size.height*0.1)
+                                        .frame(width: geometry.size.width*0.21, height:geometry.size.height*0.12)
                                     Text("Despre")
                                         .foregroundColor(Color.white)
                                 }
@@ -66,7 +69,7 @@ struct Row: View {
                             //Button design basically, here a ZStack to once again overlap shit
                             ZStack{
                                 Rectangle()
-                                    .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                    .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                     .cornerRadius(23)
                                 
                                     .shadow(radius: 10)
@@ -75,7 +78,7 @@ struct Row: View {
                                 VStack{
                                     Image("mk1eng")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.1)
+                                        .frame(width: geometry.size.width*0.24, height:geometry.size.height*0.12)
                                         .cornerRadius(20)
                                     Text("Specificații tehnice")
                                         .foregroundColor(Color.white)
@@ -88,7 +91,7 @@ struct Row: View {
                         }){
                             ZStack{
                                 Rectangle()
-                                    .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                    .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                     .cornerRadius(23)
                                     .shadow(radius: 10)
                                     .padding(5)
@@ -96,7 +99,7 @@ struct Row: View {
                                 VStack{
                                     Image("funnymk1")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.29, height:geometry.size.height*0.1)
+                                        .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.12)
                                         .cornerRadius(20)
                                     Text("Verificare preț")
                                         .foregroundColor(Color.white)
@@ -127,14 +130,14 @@ struct Row: View {
                                 ZStack{
                                     Rectangle()
                                         .fill(Gradient(colors:[.customBlue, .customPink]))
-                                        .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                         .cornerRadius(23)
                                         .shadow(radius: 10)
                                         .padding(5)
                                     VStack{
                                         Image("mk2")
                                             .resizable()
-                                            .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.105)
+                                            .frame(width: geometry.size.width*0.23, height:geometry.size.height*0.125)
                                         Text("Despre")
                                             .foregroundColor(Color.white)
                                     }
@@ -149,14 +152,14 @@ struct Row: View {
                                 ZStack{
                                     Rectangle()
                                         .fill(Gradient(colors:[.customBlue, .customPink]))//gradient to show that it includes both pre and post facelift
-                                        .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                         .cornerRadius(23)
                                         .shadow(radius: 10)
                                         .padding(5)
                                     VStack{
                                         Image("mk2Engine")
                                             .resizable()
-                                            .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.105)
+                                            .frame(width: geometry.size.width*0.25, height:geometry.size.height*0.125)
                                             .cornerRadius(20)
                                         Text("Specificații tehnice")
                                             .foregroundColor(Color.white)
@@ -172,14 +175,14 @@ struct Row: View {
                                 ZStack{
                                     Rectangle()
                                         .fill(Gradient(colors:[.customBlue, .customPink]))
-                                        .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
                                         .cornerRadius(23)
                                         .shadow(radius: 10)
                                         .padding(5)
                                     VStack{
                                         Image("mk2Engine")
                                             .resizable()
-                                            .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.105)
+                                            .frame(width: geometry.size.width*0.25, height:geometry.size.height*0.125)
                                             .cornerRadius(20)
                                         Text("Verificare preț")
                                             .foregroundColor(Color.white)
@@ -198,5 +201,5 @@ struct Row: View {
 }
 
 #Preview {
-    Row()
+    Row_iPad()
 }

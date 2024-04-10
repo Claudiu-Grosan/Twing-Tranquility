@@ -9,12 +9,51 @@ import SwiftUI
 
 struct Mk2Selection: View {
     @Environment(\.horizontalSizeClass) var HorizontalSize:UserInterfaceSizeClass? //this checks if the device is an ipad, if so, it will show the appropriate view
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         if HorizontalSize == .regular{
-            Mk2About_iPad()
+            GeometryReader { geometry in
+                VStack{
+                    Button ("Back", systemImage: "chevron.backward" ){
+                        dismiss()
+                    }
+                    .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    .buttonStyle(.bordered)
+                    TabView{
+                        Mk2About_iPad()
+                            .tabItem {
+                                Label("Pre-Facelift", image: "mk2Rear" )
+                            }
+                        Mk2FaceliftAbout_iPad()
+                            .tabItem{
+                                Label("Facelift", image: "mk2fRear" )
+                            }
+                    }
+                }
+            }
+            
         }
         else{
-            Mk2About()
+            GeometryReader { geometry in
+                VStack{
+                    Button ("Back", systemImage: "chevron.backward" ){
+                        dismiss()
+                    }
+                    .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    .buttonStyle(.bordered)
+                    TabView{
+                        Mk2About()
+                            .tabItem {
+                                Label("Pre-Facelift", image: "mk2Rear" )
+                            }
+                        Mk2FaceliftAbout()
+                            .tabItem{
+                                Label("Facelift", image: "mk2fRear" )
+                            }
+                    }
+                }
+            }
         }
         
     }

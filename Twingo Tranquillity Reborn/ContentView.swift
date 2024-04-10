@@ -59,7 +59,7 @@ struct ContentView: View {
                     Label("Acasă", systemImage: "house" )
             }
             
-            Row()
+            RowSelection()
             .tabItem {
                 Label("Twingo-uri", image: "Ticon" )
             }

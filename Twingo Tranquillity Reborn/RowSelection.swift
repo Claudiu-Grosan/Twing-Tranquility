@@ -1,24 +1,24 @@
 //
-//  Mk2SelectionSpecs.swift
+//  RowSelection.swift
 //  Twingo Tranquillity Reborn
 //
-//  Created by Clau on 4/9/24.
+//  Created by Clau on 4/10/24.
 //
 
 import SwiftUI
 
-struct Mk2SelectionSpecs: View {
+struct RowSelection: View {
     @Environment(\.horizontalSizeClass) var HorizontalSize:UserInterfaceSizeClass? //this checks if the device is an ipad, if so, it will show the appropriate view
     var body: some View {
         if HorizontalSize == .regular{
-            Mk2Specs_iPad()
+            Row_iPad()
         }
         else{
-            Mk2Specs()
+            Row()
         }
     }
 }
 
 #Preview {
-    Mk2SelectionSpecs()
+    RowSelection()
 }

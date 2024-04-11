@@ -34,7 +34,10 @@ struct Mk2Specs: View {
                     .font(.subheadline)
                     .frame(width: geometry.size.width*0.9, height:geometry.size.height*0.01, alignment: .leading)
                 ScrollView(.horizontal, showsIndicators: false, content: {
+                    
                     HStack{
+                        Spacer()
+                            .frame(width:geometry.size.width*0.03)
                         HStack{
                             ZStack{
                                 Rectangle()
@@ -257,6 +260,7 @@ struct Mk2Specs: View {
                                     )
                                     .frame(width: geometry.size.width*0.3,alignment:.leading)
                             }
+                            
                         }
                     }
                     
@@ -267,6 +271,8 @@ struct Mk2Specs: View {
                 
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     HStack{
+                        Spacer()
+                            .frame(width:geometry.size.width*0.03)
                         HStack{
                             ZStack{
                                 Rectangle()

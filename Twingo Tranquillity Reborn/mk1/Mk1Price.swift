@@ -9,28 +9,21 @@ import SwiftUI
 
 struct Mk1Price: View {
         @Environment(\.openURL) var openURL // to open websites
-        @Environment(\.dismiss) var dismiss
-        var body: some View {
+    var body: some View {
+        GeometryReader{ geometry in
             VStack{
-                Button ("Back", systemImage: "chevron.backward" ){
-                    dismiss()
-                }
-                .frame(maxWidth: 350, alignment: .leading)
-                .buttonStyle(.bordered)
                 Text("Generația întâi de Twingo")
                     .font(.system(size:43))
                     .fontWeight(.black)
                     .foregroundColor(Color.customGreen)
                     .fontDesign(.rounded)
-                    .frame(maxWidth: 350, maxHeight: 250, alignment: .leading)
+                    .frame(width: geometry.size.width*0.9, alignment: .leading)
                 
-                Spacer()
-                    .frame(height:40)
                 
                 Image("mk1driving")
-                    .resizable(capInsets: EdgeInsets(top:190, leading: 300, bottom: 100, trailing: 270),
-                               resizingMode: .tile)
-                    .frame(width: 500,height: 350)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: geometry.size.height*0.49)
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(Color.customGreen, lineWidth: 6)
@@ -43,7 +36,7 @@ struct Mk1Price: View {
                 """)
                 .foregroundColor(Color.customGreen)
                 .fontDesign(.rounded)
-                .frame(maxWidth: 350, alignment: .leading)
+                .frame(width: geometry.size.width*0.9, alignment: .center)
                 Spacer()
                     .frame(height:40)
                 Button("Verifică prețul", systemImage: "link") {
@@ -53,10 +46,10 @@ struct Mk1Price: View {
                 .tint(.customGreen)
                 .buttonBorderShape(.capsule)
                 .symbolEffect(.bounce, value:5)
-                Divider()
-                    .frame(height:40)
+                
             }
         }
+    }
 }
 
 #Preview {

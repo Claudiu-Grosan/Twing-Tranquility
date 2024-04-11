@@ -1,14 +1,13 @@
 //
-//  Mk1Specs.swift
+//  Mk1Specs_iPad.swift
 //  Twingo Tranquillity Reborn
 //
-//  Created by Clau on 3/30/24.
+//  Created by Clau on 4/11/24.
 //
 
 import SwiftUI
 
-
-struct Mk1Specs: View {
+struct Mk1Specs_iPad: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
@@ -19,7 +18,7 @@ struct Mk1Specs: View {
                     .font(.title)
                     .fontWeight(.black)
                     .fontDesign(.rounded)
-                    .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    .frame(width: geometry.size.width*0.8, alignment: .leading)
                 Spacer()
                     .frame(height:geometry.size.height*0.05)
                 HStack{
@@ -28,7 +27,7 @@ struct Mk1Specs: View {
                     HStack{
                         ZStack{
                             Rectangle()
-                                .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.16)
+                                .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.18)
                                 .cornerRadius(23)
                                 .shadow(radius: 10)
                                 .padding(5)
@@ -36,7 +35,7 @@ struct Mk1Specs: View {
                             VStack{
                                 Image("c3g")
                                     .resizable()
-                                    .frame(width: geometry.size.width*0.31, height: geometry.size.height*0.105)
+                                    .frame(width: geometry.size.width*0.33, height: geometry.size.height*0.125)
                                     .cornerRadius(10)
                                 Text("1.2(55/58 CP)")
                                     .foregroundColor(Color.white)
@@ -55,7 +54,7 @@ struct Mk1Specs: View {
                         }
                         Text("150 km/h")
                             .foregroundColor(Color.customGreen)
-                            .frame(width: geometry.size.width*0.2,alignment:.leading)
+                            .frame(width: geometry.size.width*0.27,alignment:.leading)
                         Spacer()
                             .frame(height:geometry.size.height*0.009)
                         HStack{
@@ -64,7 +63,7 @@ struct Mk1Specs: View {
                                 .frame(width: geometry.size.width*0.35,alignment:.leading)
                         }
                         Text("13.4 (16.4 auto) sec")
-                            .frame(width: geometry.size.width*0.43,alignment:.leading)
+                            .frame(width: geometry.size.width*0.37,alignment:.leading)
                             .foregroundColor(Color.customGreen)
                         Spacer()
                             .frame(height:geometry.size.height*0.009)
@@ -74,7 +73,7 @@ struct Mk1Specs: View {
                                 .frame(width: geometry.size.width*0.35,alignment:.leading)
                         }
                         Text("6 (7.4 auto) l/100 km")
-                            .frame(width: geometry.size.width*0.43,alignment:.leading)
+                            .frame(width: geometry.size.width*0.37,alignment:.leading)
                             .foregroundColor(Color.customGreen)
                         
                     }
@@ -87,7 +86,7 @@ struct Mk1Specs: View {
                     HStack{
                         ZStack{
                             Rectangle()
-                                .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.16)
+                                .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.18)
                                 .cornerRadius(23)
                                 .shadow(radius: 10)
                                 .padding(5)
@@ -95,7 +94,7 @@ struct Mk1Specs: View {
                             VStack{
                                 Image("d4f")
                                     .resizable()
-                                    .frame(width: geometry.size.width*0.31, height: geometry.size.height*0.105)
+                                    .frame(width: geometry.size.width*0.33, height: geometry.size.height*0.125)
                                     .cornerRadius(10)
                                 Text("1.2(75 CP)")
                                     .foregroundColor(Color.white)
@@ -106,7 +105,6 @@ struct Mk1Specs: View {
                     VStack{
                         Spacer()
                             .frame(height:geometry.size.height*0.03)
-                        //PANA AICI
                         HStack{
                             Image(systemName: "circle.fill")
                             Text("Viteză maximă:")
@@ -114,7 +112,7 @@ struct Mk1Specs: View {
                         }
                         Text("168 km/h")
                             .foregroundColor(Color.customGreen)
-                            .frame(width: geometry.size.width*0.2,alignment:.leading)
+                            .frame(width: geometry.size.width*0.27,alignment:.leading)
                         Spacer()
                             .frame(height:geometry.size.height*0.009)
                         HStack{
@@ -124,7 +122,7 @@ struct Mk1Specs: View {
                         }
                         Text("11.7 (13.3 auto) sec")
                             .foregroundColor(Color.customGreen)
-                            .frame(width: geometry.size.width*0.43,alignment:.leading)
+                            .frame(width: geometry.size.width*0.32,alignment:.leading)
                         Spacer()
                             .frame(height:geometry.size.height*0.009)
                         HStack{
@@ -134,7 +132,7 @@ struct Mk1Specs: View {
                         }
                         Text("5.9 l/100 km")
                             .foregroundColor(Color.customGreen)
-                            .frame(width: geometry.size.width*0.25,alignment:.leading)
+                            .frame(width: geometry.size.width*0.27,alignment:.leading)
                         
                     }
                 }
@@ -144,5 +142,5 @@ struct Mk1Specs: View {
 }
 
 #Preview {
-    Mk1Specs()
+    Mk1Specs_iPad()
 }

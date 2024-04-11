@@ -23,6 +23,8 @@
 		69B1CBCD2BC57A6000101484 /* Mk2Specs_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1CBCC2BC57A6000101484 /* Mk2Specs_iPad.swift */; };
 		69B1CBCF2BC58F7C00101484 /* Mk2FaceliftAbout_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1CBCE2BC58F7C00101484 /* Mk2FaceliftAbout_iPad.swift */; };
 		69B553592BB887B900A8E11C /* Mk1Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B553582BB887B900A8E11C /* Mk1Specs.swift */; };
+		69B8639D2BC7C66900815F10 /* Mk1Specs_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */; };
+		69B8639F2BC7C81300815F10 /* Mk1SelectionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */; };
 		69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */; };
 		69BE9B7C2BA5DEB0000D9236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */; };
 		69BE9B7E2BA5DEB2000D9236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BE9B7D2BA5DEB2000D9236 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		69B1CBCC2BC57A6000101484 /* Mk2Specs_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2Specs_iPad.swift; sourceTree = "<group>"; };
 		69B1CBCE2BC58F7C00101484 /* Mk2FaceliftAbout_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2FaceliftAbout_iPad.swift; sourceTree = "<group>"; };
 		69B553582BB887B900A8E11C /* Mk1Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Specs.swift; sourceTree = "<group>"; };
+		69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Specs_iPad.swift; sourceTree = "<group>"; };
+		69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1SelectionSpecs.swift; sourceTree = "<group>"; };
 		69BE9B762BA5DEB0000D9236 /* Twingo Tranquillity Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twingo Tranquillity Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twingo_Tranquillity_RebornApp.swift; sourceTree = "<group>"; };
 		69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 				69B553582BB887B900A8E11C /* Mk1Specs.swift */,
 				698E54022BBC4A1700E2B470 /* Mk1Price.swift */,
 				694477312BC73F3700FD2F4C /* Mk1Selection.swift */,
+				69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */,
 				6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */,
+				69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */,
 			);
 			path = mk1;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B8639D2BC7C66900815F10 /* Mk1Specs_iPad.swift in Sources */,
+				69B8639F2BC7C81300815F10 /* Mk1SelectionSpecs.swift in Sources */,
 				69B1CBCB2BC57A1900101484 /* Mk2SelectionSpecs.swift in Sources */,
 				698E54032BBC4A1700E2B470 /* Mk1Price.swift in Sources */,
 				69B553592BB887B900A8E11C /* Mk1Specs.swift in Sources */,

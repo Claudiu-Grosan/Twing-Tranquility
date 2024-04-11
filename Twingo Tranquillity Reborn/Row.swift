@@ -82,7 +82,7 @@ struct Row: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented2, content: Mk1Specs.init)
+                        .fullScreenCover(isPresented: $isPresented2, content: Mk1SelectionSpecs.init)
                         Button(action:{
                             isPresented3.toggle() //button action/animation
                         }){

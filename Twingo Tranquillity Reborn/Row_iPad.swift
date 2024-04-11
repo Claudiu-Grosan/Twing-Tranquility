@@ -59,7 +59,7 @@ struct Row_iPad: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented1, content: Mk1About.init)
+                        .fullScreenCover(isPresented: $isPresented1, content: Mk1Selection.init)
                         //Necessary to be able to open future pages of the project
                         
                         
@@ -85,7 +85,7 @@ struct Row_iPad: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented2, content: Mk1Specs.init)
+                        .fullScreenCover(isPresented: $isPresented2, content: Mk1SelectionSpecs.init)
                         Button(action:{
                             isPresented3.toggle() //button action/animation
                         }){

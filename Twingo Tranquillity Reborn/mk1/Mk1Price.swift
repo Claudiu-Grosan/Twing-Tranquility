@@ -8,29 +8,37 @@
 import SwiftUI
 
 struct Mk1Price: View {
-        @Environment(\.openURL) var openURL // to open websites
+    @Environment(\.openURL) var openURL // to open websites
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         GeometryReader{ geometry in
             VStack{
+                Button ("Back", systemImage: "chevron.backward" ){
+                    dismiss()
+                }
+                .frame(width: geometry.size.width*0.9, alignment: .leading)
+                .buttonStyle(.bordered)
+                
                 Text("Generația întâi de Twingo")
-                    .font(.system(size:43))
+                    .font(.title)
                     .fontWeight(.black)
                     .foregroundColor(Color.customGreen)
                     .fontDesign(.rounded)
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                 
-                
-                Image("mk1driving")
+                Spacer()
+                    .frame(height: geometry.size.height*0.08)
+                Image("mk1drv")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: geometry.size.width, height: geometry.size.height*0.49)
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(Color.customGreen, lineWidth: 6)
                     }
+                    .frame(width: geometry.size.width, height: geometry.size.height*0.45)
                     .shadow(radius:5)
                 Spacer()
-                    .frame(height:40)
+                    .frame(height:geometry.size.height*0.08)
                 Text("""
                 V-am stârnit interesul? Verificați prețul în timp real pe platforma Olx
                 """)

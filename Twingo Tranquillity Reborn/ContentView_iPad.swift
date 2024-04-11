@@ -1,10 +1,14 @@
-//  ContentView.swift
-//  Twingo Tranquillity
-//  Created by Clau on 3/9/24.
+//
+//  ContentView_iPad.swift
+//  Twingo Tranquillity Reborn
+//
+//  Created by Clau on 4/11/24.
+//
 
-import AVKit//needed for video player
 import SwiftUI
-struct ContentView: View {
+import AVKit
+
+struct ContentView_iPad: View {
     @State private var test=true
     @State private var sound="speaker.wave.3"
     let player=AVPlayer(url:Bundle.main.url(forResource: "liberte", withExtension: "mp4")!)
@@ -34,8 +38,10 @@ struct ContentView: View {
                     .fontWeight(.black)
                     .fontDesign(.rounded)
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    Spacer()
+                        .frame(height: geometry.size.height*0.05)
                     VideoPlayer(player: player)
-                        .frame(width: 243.8, height: 433.3)
+                        .frame(width: 487.5, height: 866.6)
                         .cornerRadius(10)
                         .disabled(true)
                     
@@ -85,10 +91,8 @@ struct ContentView: View {
             }
         }
     }
-    
 }
 
 #Preview {
-    ContentView()
+    ContentView_iPad()
 }
-

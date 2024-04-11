@@ -6,9 +6,10 @@ import SwiftUI
 
 @main
 struct Twingo_Tranquillity_RebornApp: App {
+    @Environment(\.horizontalSizeClass) var HorizontalSize:UserInterfaceSizeClass?
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentViewSelection()
         }
     }
 }

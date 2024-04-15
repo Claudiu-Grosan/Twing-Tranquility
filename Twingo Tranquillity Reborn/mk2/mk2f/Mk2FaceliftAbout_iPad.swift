@@ -27,19 +27,19 @@ struct Mk2FaceliftAbout_iPad: View {
                             Image("mk2FaceliftImg")
                                 .resizable(capInsets: EdgeInsets(top:20, leading: 30, bottom: 30, trailing: 70))
                                 .scaledToFill()
-                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.49)
+                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.59)
                                 .clipShape(Circle())
                                 .overlay{
                                     Circle().stroke(Color.customPink, lineWidth: 6)
                                 }
                             Spacer()
-                                .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.51)
+                                .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.62)
                             Spacer()
                                 .frame(width: geometry.size.width*0.03)
                             Image("mk2finterior")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.49)
+                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.59)
                                 .clipShape(Circle())
                                 .overlay{
                                     Circle().stroke(Color.customPink, lineWidth: 6)
@@ -47,7 +47,7 @@ struct Mk2FaceliftAbout_iPad: View {
                             Spacer()
                                 .frame(width: geometry.size.width*0.03)
                         }
-                        .padding(.vertical, 20)
+                        
                     })
                     
                     ScrollView(.horizontal, showsIndicators: false, content: {

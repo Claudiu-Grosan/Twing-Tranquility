@@ -27,18 +27,19 @@ struct Mk1Price: View {
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                 
                 Spacer()
-                    .frame(height: geometry.size.height*0.08)
+                    .frame(height: geometry.size.height*0.05)
+                
                 Image("mk1drv")
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(Color.customGreen, lineWidth: 6)
                     }
-                    .frame(width: geometry.size.width, height: geometry.size.height*0.45)
+                    .frame(width: geometry.size.width, height: geometry.size.height*0.55)
                     .shadow(radius:5)
                 Spacer()
-                    .frame(height:geometry.size.height*0.08)
+                    .frame(height:geometry.size.height*0.05)
                 Text("""
                 V-am stârnit interesul? Verificați prețul în timp real pe platforma Olx
                 """)
@@ -46,7 +47,7 @@ struct Mk1Price: View {
                 .fontDesign(.rounded)
                 .frame(width: geometry.size.width*0.9, alignment: .center)
                 Spacer()
-                    .frame(height:40)
+                    .frame(height:geometry.size.height*0.05)
                 Button("Verifică prețul", systemImage: "link") {
                     openURL(URL(string: "https://www.olx.ro/oferte/q-renault-twingo/?currency=EUR&search%5Border%5D=filter_float_price:desc&search%5Bfilter_float_price:from%5D=600&search%5Bfilter_float_price:to%5D=1250")!)
                 }

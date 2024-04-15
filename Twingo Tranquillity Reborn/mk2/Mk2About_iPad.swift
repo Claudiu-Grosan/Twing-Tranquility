@@ -27,13 +27,13 @@ struct Mk2About_iPad: View {
                                         .frame(width: geometry.size.width*0.03)
                                     Image("mk2img")
                                         .resizable(capInsets: EdgeInsets(top:20, leading: 30, bottom: 30, trailing: 70))
-                                        .scaledToFill()
+                                        .scaledToFit()
                                         .clipShape(Circle())
                                         .overlay{
                                             Circle().stroke(Color.customBlue, lineWidth: 10)
                                                 
                                         }
-                                        .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.49)
+                                        .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.56)
                                     Spacer()
                                         .frame(width: geometry.size.width*0.04)
                                     Spacer()
@@ -46,13 +46,12 @@ struct Mk2About_iPad: View {
                                             Circle().stroke(Color.customBlue, lineWidth: 10)
                                                 
                                         }
-                                        .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.559)
+                                        .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.56)
                                     Spacer()
-                                        .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.69)
+                                        .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.65)
                                     
                                 }
                             })
-                            .padding(.vertical, 20)
                             
                             ScrollView(.horizontal, showsIndicators: false, content: {
                                 HStack{

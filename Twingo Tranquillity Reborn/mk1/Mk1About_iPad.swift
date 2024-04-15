@@ -23,33 +23,32 @@ struct Mk1About_iPad: View {
                     ScrollView(.horizontal, showsIndicators: false, content:{
                         HStack{
                             Spacer()
-                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.69)
+                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.6)
                             Image("allahTwingo")
                                 .resizable()
-                                .scaledToFill()
+                                .scaledToFit()
                                 .clipShape(Circle())
                                 .overlay{
                                     Circle().stroke(Color.customGreen, lineWidth: 10)
                                 }
-                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.49)
+                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.6)
                             Spacer()
-                                .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.69)
+                                .frame(width: geometry.size.width*0.04,height: geometry.size.height*0.6)
                             Spacer()
-                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.69)
+                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.6)
                             Image("mk1interior")
                                 .resizable()
                                 .clipShape(Circle())
-                                .scaledToFill()
+                                .scaledToFit()
                                 .overlay{
                                     Circle().stroke(Color.customGreen, lineWidth: 10)
                                 }
-                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.643)
+                                .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.6)
                             Spacer()
-                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.74)
+                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.65)
                         }
                         
                     })
-                    .padding(.vertical, 10)
                     
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack{

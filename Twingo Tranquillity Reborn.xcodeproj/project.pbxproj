@@ -37,6 +37,8 @@
 		69BE9BA42BA5DEFF000D9236 /* TwingoMk3_pg1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9BA32BA5DEFF000D9236 /* TwingoMk3_pg1.swift */; };
 		69C5F10E2BC6E5C60008AD9B /* Row_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F10D2BC6E5C60008AD9B /* Row_iPad.swift */; };
 		69C5F1122BC6E7A50008AD9B /* RowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F1112BC6E7A50008AD9B /* RowSelection.swift */; };
+		69EBBACF2BD561A20029C0D9 /* Mk2Price_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EBBACE2BD561A20029C0D9 /* Mk2Price_iPad.swift */; };
+		69EBBAD12BD561FB0029C0D9 /* Mk2SelectionPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EBBAD02BD561FB0029C0D9 /* Mk2SelectionPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		69BE9BA32BA5DEFF000D9236 /* TwingoMk3_pg1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwingoMk3_pg1.swift; sourceTree = "<group>"; };
 		69C5F10D2BC6E5C60008AD9B /* Row_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row_iPad.swift; sourceTree = "<group>"; };
 		69C5F1112BC6E7A50008AD9B /* RowSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSelection.swift; sourceTree = "<group>"; };
+		69EBBACE2BD561A20029C0D9 /* Mk2Price_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2Price_iPad.swift; sourceTree = "<group>"; };
+		69EBBAD02BD561FB0029C0D9 /* Mk2SelectionPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2SelectionPrice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				6993573B2BC075C9001AB02C /* Mk2Specs.swift */,
 				698E54072BBC4DF100E2B470 /* Mk2About.swift */,
 				692EC6D82BC1FDC90090FE3C /* Mk2Price.swift */,
+				69EBBAD02BD561FB0029C0D9 /* Mk2SelectionPrice.swift */,
+				69EBBACE2BD561A20029C0D9 /* Mk2Price_iPad.swift */,
 				699A4E7E2BC43A7500553A5D /* Mk2Selection.swift */,
 				69B1CBCA2BC57A1900101484 /* Mk2SelectionSpecs.swift */,
 				699A4E802BC43B8F00553A5D /* Mk2About_iPad.swift */,
@@ -360,11 +366,13 @@
 				69C5F1122BC6E7A50008AD9B /* RowSelection.swift in Sources */,
 				69BE9B7C2BA5DEB0000D9236 /* ContentView.swift in Sources */,
 				69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */,
+				69EBBACF2BD561A20029C0D9 /* Mk2Price_iPad.swift in Sources */,
 				69A06FBF2BC861220044EC2B /* ContentViewSelection.swift in Sources */,
 				69C5F10E2BC6E5C60008AD9B /* Row_iPad.swift in Sources */,
 				699F6DFF2BAD86D40090EF8C /* Mk1About.swift in Sources */,
 				694477302BC733C600FD2F4C /* Mk1About_iPad.swift in Sources */,
 				69B1CBCF2BC58F7C00101484 /* Mk2FaceliftAbout_iPad.swift in Sources */,
+				69EBBAD12BD561FB0029C0D9 /* Mk2SelectionPrice.swift in Sources */,
 				69326EB92BAB145700C18FCE /* Row.swift in Sources */,
 				698E54082BBC4DF100E2B470 /* Mk2About.swift in Sources */,
 				6993573C2BC075C9001AB02C /* Mk2Specs.swift in Sources */,

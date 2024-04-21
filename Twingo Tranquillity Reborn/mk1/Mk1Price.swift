@@ -36,7 +36,7 @@ struct Mk1Price: View {
                     .overlay{
                         Circle().stroke(Color.customGreen, lineWidth: 6)
                     }
-                    .frame(width: geometry.size.width, height: geometry.size.height*0.55)
+                    .frame(width: geometry.size.width, height: geometry.size.height*0.53)
                     .shadow(radius:5)
                 Spacer()
                     .frame(height:geometry.size.height*0.05)

@@ -10,6 +10,14 @@ extension Color{
    }
 }
 
+//to move to mk3 "facelift" 💀
+
+extension Color{
+   public static var customYellow:Color{
+      return Color(UIColor(red:237/255, green: 182/255, blue:0/255, alpha: 1.0))
+   }
+}
+
 struct TwingoMk3_pg1: View {
     @Environment(\.openURL) var openURL //to open websites
     @Environment(\.dismiss) var dismiss

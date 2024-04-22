@@ -43,7 +43,7 @@ struct Mk2Price: View {
                     .frame(width: geometry.size.width*0.76, height: geometry.size.height*0.398)
                     .shadow(radius:5)
                 Spacer()
-                    .frame(height:geometry.size.height*0.15)
+                    .frame(height:geometry.size.height*0.11)
                 Text("""
             V-am stârnit interesul? Verificați prețul în timp real pe platforma Olx
             """)

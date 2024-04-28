@@ -13,6 +13,8 @@ struct Row_iPad: View {
     @State private var isPresented3 = false
     @State private var isPresented4 = false
     @State private var isPresented5 = false
+    @State private var isPresented6 = false
+    @State private var isPresented7 = false
     var body: some View {
         GeometryReader { geometry in
             //VStack to group everything
@@ -180,9 +182,9 @@ struct Row_iPad: View {
                                         .shadow(radius: 10)
                                         .padding(5)
                                     VStack{
-                                        Image("mk2Engine")
+                                        Image("mk2conf")
                                             .resizable()
-                                            .frame(width: geometry.size.width*0.25, height:geometry.size.height*0.125)
+                                            .frame(width: geometry.size.width*0.27, height:geometry.size.height*0.125)
                                             .cornerRadius(20)
                                         Text("Verificare preț")
                                             .foregroundColor(Color.white)
@@ -190,6 +192,90 @@ struct Row_iPad: View {
                                 }
                             }
                             .fullScreenCover(isPresented: $isPresented5, content: Mk2SelectionSpecs.init)
+                        }
+                        Spacer()
+                            .frame(width: geometry.size.width*0.03)
+                    }
+                })
+                Text("Generația 3")
+                    .font(.subheadline)
+                    .frame(width: geometry.size.width*0.9, alignment: .leading)
+                //2nd Scroll View
+                ScrollView(.horizontal, showsIndicators: false, content:{
+                    //Same Shit, copy paste :3
+                    HStack{
+                        Spacer()
+                            .frame(width: geometry.size.width*0.03)
+                        ZStack{
+                            Button(action:{
+                                isPresented4.toggle()
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .fill(Gradient(colors:[.customPurple, .customYellow]))
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Spacer()
+                                            .frame(height: geometry.size.height*0.02)
+                                        Image("mk3")
+                                            .resizable()
+                                            .frame(width: geometry.size.width*0.24, height:geometry.size.height*0.105)
+                                        Text("Despre")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                            }
+                            .fullScreenCover(isPresented: $isPresented4, content: Mk2Selection.init)
+                        }
+                        ZStack{
+                            Button(action:{
+                                isPresented5.toggle()
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .fill(Gradient(colors:
+                                                        [.customPurple, .customYellow]))//gradient to show that it includes both pre and post facelift
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Image("mk3engine")
+                                            .resizable()
+                                            .frame(width: geometry.size.width*0.267, height:geometry.size.height*0.125)
+                                            .cornerRadius(20)
+                                        Text("Specificații tehnice")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                            }
+                            .fullScreenCover(isPresented: $isPresented5, content: Mk2SelectionSpecs.init)
+                        }
+                        ZStack{
+                            Button(action:{
+                                isPresented6.toggle()
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .fill(Gradient(colors:[.customPurple, .customYellow]))
+                                        .frame(width: geometry.size.width*0.4, height: geometry.size.height*0.16)
+                                        .cornerRadius(23)
+                                        .shadow(radius: 10)
+                                        .padding(5)
+                                    VStack{
+                                        Image("swingo")
+                                            .resizable()
+                                            .frame(width: geometry.size.width*0.29, height:geometry.size.height*0.125)
+                                            .cornerRadius(20)
+                                        Text("Verificare preț")
+                                            .foregroundColor(Color.white)
+                                    }
+                                }
+                            }
+                            .fullScreenCover(isPresented: $isPresented6, content: Mk2SelectionPrice.init)
                         }
                         Spacer()
                             .frame(width: geometry.size.width*0.03)

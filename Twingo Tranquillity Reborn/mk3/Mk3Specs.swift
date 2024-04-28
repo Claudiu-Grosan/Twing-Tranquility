@@ -15,19 +15,19 @@ struct Mk3Specs: View {
                 Button ("Back", systemImage: "chevron.backward" ){
                     dismiss()
                 }
-                .frame(width: geometry.size.width*0.9, alignment: .leading)
+                .frame(width: geometry.size.width*0.91, alignment: .leading)
                 .buttonStyle(.bordered)
                 Spacer()
                     .frame(height:geometry.size.height*0.1)
                 
-                Text("Specificații pentru a doua generație de Twingo")
+                Text("Specificații pentru a treia generație de Twingo")
                     .foregroundStyle(
-                        LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing)
+                        LinearGradient(colors: [.customPurple, .customYellow], startPoint: .leading, endPoint: .trailing)
                     )
                     .font(.title)
                     .fontWeight(.black)
                     .fontDesign(.rounded)
-                    .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    .frame(width: geometry.size.width*0.91, alignment: .leading)
                 Spacer()
                     .frame(height:geometry.size.height*0.035)
                 Text("Motoare pe benzină")
@@ -37,21 +37,21 @@ struct Mk3Specs: View {
                     
                     HStack{
                         Spacer()
-                            .frame(width:geometry.size.width*0.047)//to do
+                            .frame(width:geometry.size.width*0.03)
                         HStack{
                             ZStack{
                                 Rectangle()
-                                    .fill(Color.customBlue)
+                                    .fill(Color.customYellow)
                                     .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.16)
                                     .cornerRadius(23)
                                     .shadow(radius: 10)
                                     .padding(5)
                                 VStack{
-                                    Image("mk2.58hp")
+                                    Image("Sce1")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.31, height: geometry.size.height*0.105)
+                                        .frame(width: geometry.size.width*0.33, height: geometry.size.height*0.105)
                                         .cornerRadius(10)
-                                    Text("1.2(58 CP)")
+                                    Text("1.0 SCe (65 CP)")
                                         .foregroundColor(Color.white)
                                 }
                             }
@@ -65,8 +65,8 @@ struct Mk3Specs: View {
                                 Text("Viteză maximă:")
                                     .frame(width: geometry.size.width*0.35,alignment:.leading)
                             }
-                            Text("150 km/h")
-                                .foregroundColor(Color.customBlue)
+                            Text("158 km/h")
+                                .foregroundColor(Color.customYellow)
                                 .frame(width: geometry.size.width*0.22,alignment:.leading)
                             Spacer()
                                 .frame(height:geometry.size.width*0.01)
@@ -75,8 +75,8 @@ struct Mk3Specs: View {
                                 Text("0-100 km/h:")
                                     .frame(width: geometry.size.width*0.35,alignment:.leading)
                             }
-                            Text("15 sec")
-                                .foregroundColor(Color.customBlue)
+                            Text("15.1 sec")
+                                .foregroundColor(Color.customYellow)
                                 .frame(width: geometry.size.width*0.22,alignment:.leading)
                             Spacer()
                                 .frame(height:geometry.size.width*0.01)
@@ -85,8 +85,8 @@ struct Mk3Specs: View {
                                 Text("Consum mediu (aproximativ):")
                                     .frame(width: geometry.size.width*0.35,height: geometry.size.height*0.066,alignment:.leading)
                             }
-                            Text("5.5 l/100 km")
-                                .foregroundColor(Color.customBlue)
+                            Text("5.1 l/100 km")
+                                .foregroundColor(Color.customYellow)
                                 .frame(width: geometry.size.width*0.3,alignment:.leading)
                         }
                         
@@ -112,7 +112,7 @@ struct Mk3Specs: View {
                                     }
                                 }
                             }
-                            
+
                             VStack{
                                 Spacer()
                                     .frame(height:geometry.size.height*0.04)
@@ -269,59 +269,63 @@ struct Mk3Specs: View {
                     .font(.subheadline)
                     .frame(width: geometry.size.width*0.9, height:geometry.size.height*0.01, alignment: .leading)
                 
-                HStack{
-                    Spacer()
-                        .frame(width:geometry.size.width*0.02)//to do
+                ScrollView(.horizontal, showsIndicators: false, content: {
                     HStack{
-                        ZStack{
-                            Rectangle()
-                                .fill(Color.customBlue)
-                                .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.16)
-                                .cornerRadius(23)
-                                .shadow(radius: 10)
-                                .padding(5)
-                            VStack{
-                                Image("65dci")
-                                    .resizable()
-                                    .frame(width: geometry.size.width*0.31, height: geometry.size.height*0.105)
-                                    .cornerRadius(10)
-                                Text("1.5 dci (65 CP)")
-                                    .foregroundColor(Color.white)
+                        Spacer()
+                            .frame(width:geometry.size.width*0.03)
+                        HStack{
+                            ZStack{
+                                Rectangle()
+                                    .fill(Color.customBlue)
+                                    .frame(width: geometry.size.width*0.47, height: geometry.size.height*0.16)
+                                    .cornerRadius(23)
+                                    .shadow(radius: 10)
+                                    .padding(5)
+                                VStack{
+                                    Image("65dci")
+                                        .resizable()
+                                        .frame(width: geometry.size.width*0.31, height: geometry.size.height*0.105)
+                                        .cornerRadius(10)
+                                    Text("1.5 dci (65 CP)")
+                                        .foregroundColor(Color.white)
+                                }
                             }
                         }
+                        
+                        VStack{
+                            Spacer()
+                                .frame(height:geometry.size.height*0.04)
+                            HStack{
+                                Image(systemName: "circle.fill")
+                                Text("Viteză maximă:")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            Text("164 km/h")
+                                .foregroundColor(Color.customBlue)
+                                .frame(width: geometry.size.width*0.22,alignment:.leading)
+                            Spacer()
+                                .frame(height:geometry.size.width*0.01)
+                            HStack{
+                                Image(systemName: "circle.fill")
+                                Text("0-100 km/h:")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            Text("14.9 sec")
+                                .foregroundColor(Color.customBlue)
+                                .frame(width: geometry.size.width*0.22,alignment:.leading)
+                            HStack{
+                                Image(systemName: "circle.fill")
+                                Text("Consum mediu (aproximativ):")
+                                    .frame(width: geometry.size.width*0.35,height: geometry.size.height*0.066,alignment:.leading)
+                            }
+                            Text("4.3 l/100 km")
+                                .foregroundColor(Color.customBlue)
+                                .frame(width: geometry.size.width*0.3,alignment:.leading)
+                        }
+
                     }
                     
-                    VStack{
-                        Spacer()
-                            .frame(height:geometry.size.height*0.04)
-                        HStack{
-                            Image(systemName: "circle.fill")
-                            Text("Viteză maximă:")
-                                .frame(width: geometry.size.width*0.35,alignment:.leading)
-                        }
-                        Text("164 km/h")
-                            .foregroundColor(Color.customBlue)
-                            .frame(width: geometry.size.width*0.22,alignment:.leading)
-                        Spacer()
-                            .frame(height:geometry.size.width*0.01)
-                        HStack{
-                            Image(systemName: "circle.fill")
-                            Text("0-100 km/h:")
-                                .frame(width: geometry.size.width*0.35,alignment:.leading)
-                        }
-                        Text("14.9 sec")
-                            .foregroundColor(Color.customBlue)
-                            .frame(width: geometry.size.width*0.22,alignment:.leading)
-                        HStack{
-                            Image(systemName: "circle.fill")
-                            Text("Consum mediu (aproximativ):")
-                                .frame(width: geometry.size.width*0.35,height: geometry.size.height*0.066,alignment:.leading)
-                        }
-                        Text("4.3 l/100 km")
-                            .foregroundColor(Color.customBlue)
-                            .frame(width: geometry.size.width*0.3,alignment:.leading)
-                    }
-                }
+                })
             }
         }
     }

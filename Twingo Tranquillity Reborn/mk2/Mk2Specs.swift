@@ -133,7 +133,7 @@ struct Mk2Specs: View {
                                     Text("0-100 km/h:")
                                         .frame(width: geometry.size.width*0.35,alignment:.leading)
                                 }
-                                Text("13.6 (12.4 auto) sec")
+                                Text("13.6 (12.4) sec")
                                     .foregroundStyle(
                                         LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing)
                                     )

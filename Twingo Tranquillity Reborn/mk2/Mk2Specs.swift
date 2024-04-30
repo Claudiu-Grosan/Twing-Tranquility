@@ -121,11 +121,11 @@ struct Mk2Specs: View {
                                     Text("Viteză maximă:")
                                         .frame(width: geometry.size.width*0.35,alignment:.leading)
                                 }
-                                Text("173 (170) km/h")
+                                Text("170 - 173 km/h")
                                     .foregroundStyle(
                                         LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing)
                                     )
-                                    .frame(width: geometry.size.width*0.29,alignment:.leading)
+                                    .frame(width: geometry.size.width*0.3,alignment:.leading)
                                 Spacer()
                                     .frame(height:geometry.size.width*0.01)
                                 HStack{
@@ -133,11 +133,11 @@ struct Mk2Specs: View {
                                     Text("0-100 km/h:")
                                         .frame(width: geometry.size.width*0.35,alignment:.leading)
                                 }
-                                Text("13.6 (12.4) sec")
+                                Text("12.4 - 13.6 sec")
                                     .foregroundStyle(
                                         LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing)
                                     )
-                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                                    .frame(width: geometry.size.width*0.3,alignment:.leading)
                                 Spacer()
                                     .frame(height:geometry.size.width*0.01)
                                 HStack{
@@ -145,7 +145,7 @@ struct Mk2Specs: View {
                                     Text("Consum mediu (aproximativ):")
                                         .frame(width: geometry.size.width*0.35,height: geometry.size.height*0.066,alignment:.leading)
                                 }
-                                Text("5.6 (5.1) l/100 km")
+                                Text("5.1 - 5.6 l/100 km")
                                     .foregroundStyle(
                                         LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing)
                                     )

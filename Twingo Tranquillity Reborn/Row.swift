@@ -11,6 +11,9 @@ struct Row: View {
     @State private var isPresented4 = false
     @State private var isPresented5 = false
     @State private var isPresented6 = false
+    @State private var isPresented7 = false
+    @State private var isPresented8 = false
+    @State private var isPresented9 = false
     var body: some View {
         GeometryReader { geometry in
             //VStack to group everything
@@ -207,7 +210,7 @@ struct Row: View {
                             .frame(width: geometry.size.width*0.03)
                         ZStack{
                             Button(action:{
-                                isPresented4.toggle()
+                                isPresented7.toggle()
                             }){
                                 ZStack{
                                     Rectangle()
@@ -227,11 +230,11 @@ struct Row: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented4, content: Mk2Selection.init)
+                            .fullScreenCover(isPresented: $isPresented7, content: Mk2Selection.init)
                         }
                         ZStack{
                             Button(action:{
-                                isPresented5.toggle()
+                                isPresented8.toggle()
                             }){
                                 ZStack{
                                     Rectangle()
@@ -250,11 +253,11 @@ struct Row: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented5, content: Mk2SelectionSpecs.init)
+                            .fullScreenCover(isPresented: $isPresented8, content: Mk3SelectionSpecs.init)
                         }
                         ZStack{
                             Button(action:{
-                                isPresented6.toggle()
+                                isPresented9.toggle()
                             }){
                                 ZStack{
                                     Rectangle()
@@ -273,7 +276,7 @@ struct Row: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented6, content: Mk2SelectionPrice.init)
+                            .fullScreenCover(isPresented: $isPresented9, content: Mk2SelectionPrice.init)
                         }
                         Spacer()
                             .frame(width: geometry.size.width*0.03)

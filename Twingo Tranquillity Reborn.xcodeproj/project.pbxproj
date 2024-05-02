@@ -12,6 +12,7 @@
 		694477302BC733C600FD2F4C /* Mk1About_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */; };
 		694477322BC73F3700FD2F4C /* Mk1Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694477312BC73F3700FD2F4C /* Mk1Selection.swift */; };
 		696B77662BB9A39500B257D4 /* liberte.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 696B77652BB9A39500B257D4 /* liberte.mp4 */; };
+		6973DB292BE40B160032A43B /* Mk3About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973DB282BE40B160032A43B /* Mk3About.swift */; };
 		697B56DB2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B56DA2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift */; };
 		697C33ED2BE39A920038B4FC /* Mk3Specs_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C33EC2BE39A920038B4FC /* Mk3Specs_iPad.swift */; };
 		697C33EF2BE3AB5A0038B4FC /* Mk3SelectionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C33EE2BE3AB5A0038B4FC /* Mk3SelectionSpecs.swift */; };
@@ -67,6 +68,7 @@
 		6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1About_iPad.swift; sourceTree = "<group>"; };
 		694477312BC73F3700FD2F4C /* Mk1Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Selection.swift; sourceTree = "<group>"; };
 		696B77652BB9A39500B257D4 /* liberte.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liberte.mp4; sourceTree = "<group>"; };
+		6973DB282BE40B160032A43B /* Mk3About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3About.swift; sourceTree = "<group>"; };
 		697B56DA2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2FaceliftAbout.swift; sourceTree = "<group>"; };
 		697C33EC2BE39A920038B4FC /* Mk3Specs_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3Specs_iPad.swift; sourceTree = "<group>"; };
 		697C33EE2BE3AB5A0038B4FC /* Mk3SelectionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3SelectionSpecs.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				69A295112BDD71EC00E5FDFA /* Mk3Specs.swift */,
 				697C33EC2BE39A920038B4FC /* Mk3Specs_iPad.swift */,
 				697C33EE2BE3AB5A0038B4FC /* Mk3SelectionSpecs.swift */,
+				6973DB282BE40B160032A43B /* Mk3About.swift */,
 			);
 			path = mk3;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				69B1CBCF2BC58F7C00101484 /* Mk2FaceliftAbout_iPad.swift in Sources */,
 				69EBBAD12BD561FB0029C0D9 /* Mk2SelectionPrice.swift in Sources */,
 				69326EB92BAB145700C18FCE /* Row.swift in Sources */,
+				6973DB292BE40B160032A43B /* Mk3About.swift in Sources */,
 				698E54082BBC4DF100E2B470 /* Mk2About.swift in Sources */,
 				69A295122BDD71EC00E5FDFA /* Mk3Specs.swift in Sources */,
 				6993573C2BC075C9001AB02C /* Mk2Specs.swift in Sources */,

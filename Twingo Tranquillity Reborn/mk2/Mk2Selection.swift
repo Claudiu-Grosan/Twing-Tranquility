@@ -15,7 +15,7 @@ struct Mk2Selection: View {
         if HorizontalSize == .regular{
             GeometryReader { geometry in
                 VStack{
-                    Button ("Back", systemImage: "chevron.backward" ){
+                    Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
@@ -37,7 +37,7 @@ struct Mk2Selection: View {
         else{
             GeometryReader { geometry in
                 VStack{
-                    Button ("Back", systemImage: "chevron.backward" ){
+                    Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)

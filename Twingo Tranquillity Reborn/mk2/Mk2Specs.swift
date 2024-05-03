@@ -12,7 +12,7 @@ struct Mk2Specs: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
-                Button ("Back", systemImage: "chevron.backward" ){
+                Button ("înapoi", systemImage: "chevron.backward" ){
                     dismiss()
                 }
                 .frame(width: geometry.size.width*0.9, alignment: .leading)

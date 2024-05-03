@@ -71,7 +71,7 @@ struct Mk1Specs: View {
                         HStack{
                             Image(systemName: "circle.fill")
                             Text("Consum mediu (aproximativ):")
-                                .frame(width: geometry.size.width*0.35,alignment:.leading)
+                                .frame(width: geometry.size.width*0.35,height:geometry.size.height*0.07,alignment:.leading)
                         }
                         Text("6 (7.4 auto) l/100 km")
                             .frame(width: geometry.size.width*0.43,alignment:.leading)
@@ -130,7 +130,7 @@ struct Mk1Specs: View {
                         HStack{
                             Image(systemName: "circle.fill")
                             Text("Consum mediu (aproximativ):")
-                                .frame(width: geometry.size.width*0.35,alignment:.leading)
+                                .frame(width: geometry.size.width*0.35,height:geometry.size.height*0.07,alignment:.leading)
                         }
                         Text("5.9 l/100 km")
                             .foregroundColor(Color.customGreen)

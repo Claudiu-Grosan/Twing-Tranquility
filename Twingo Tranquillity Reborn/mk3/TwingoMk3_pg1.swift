@@ -23,7 +23,7 @@ struct TwingoMk3_pg1: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack{
-            Button ("Back", systemImage: "chevron.backward" ){
+            Button ("înapoi", systemImage: "chevron.backward" ){
                 dismiss()
             }
             .frame(maxWidth: 350, alignment: .leading)

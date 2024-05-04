@@ -9,8 +9,10 @@ import SwiftUI
 import AVKit
 
 struct ContentView_iPad: View {
+    @Environment(\.openURL) var openURL
     @State private var test=true
     @State private var sound="speaker.wave.3"
+    @Environment(\.colorScheme) var colorScheme
     let player=AVPlayer(url:Bundle.main.url(forResource: "liberte", withExtension: "mp4")!)
     var body: some View {
         //This right here are the tabs I used for the app's main menu
@@ -64,7 +66,7 @@ struct ContentView_iPad: View {
                     Label("Acasă", systemImage: "house" )
                 }
                 
-                RowSelection()
+                Row_iPad()
                     .tabItem {
                         Label("Twingo-uri", image: "Ticon" )
                     }
@@ -75,19 +77,144 @@ struct ContentView_iPad: View {
                     List{
                         Section {
                             Text("""
-                             Realizat de către: NyHr (Grosan "Goosander A. Mihail" Claudiu)
+                             Fiecare generație are o culoare specifică, iar pentru cele care au primit un facelift, două culori.
                              """)
-                            Text("Realizat în cadrul: Informatică la rupere")
-                        } header: {
-                            Text("💀")
+                            Text("""
+                                 Un exemplu concret se regăsește mai jos, pentru meniul generației 2. Culorile sunt albastru și roz, iar umplerea în stil "gradient" sugerează faptul că unele caracteristici sunt comune (motorizările).
+                                 """ )
+                            if (colorScheme == .dark){
+                                Image("menu")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(15)
+                                    .frame(width: geometry.size.width*0.9, height: geometry.size.height*0.45)
+                                    
+                            }
+                            else{
+                                Image("menuLight")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(15)
+                                    .frame(width: geometry.size.width*0.9, height: geometry.size.height*0.45)
+                                    
+                            }
+                            Text("""
+                                 În cazul în care umplerea este într-o singură culoare, aceasta arată că respectiva caracteristică se aplică doar unei versiuni (aici, albastru, pentru pre-facelift).
+                                 """ )
                             
+                        } header: {
+                            Text("Legendă pentru a înțelege design-ul")
+                        }
+                        Section{
+                            HStack{
+                                Image(systemName: "circle.fill").foregroundColor(Color.customGreen)
+                                Text("Prima generație")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            HStack{
+                                Image(systemName: "circle.fill").foregroundColor(Color.customBlue)
+                                Text("A doua generație (pre-facelift)")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            HStack{
+                                Image(systemName: "circle.fill").foregroundColor(Color.customPink)
+                                Text("A doua generație (facelift)")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            HStack{
+                                Image(systemName: "circle.fill").foregroundColor(Color.customPurple)
+                                Text("A treia generație (pre-facelift)")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                            HStack{
+                                Image(systemName: "circle.fill").foregroundColor(Color.customYellow)
+                                Text("A treia generație (facelift)")
+                                    .frame(width: geometry.size.width*0.35,alignment:.leading)
+                            }
+                        }header:{
+                            Text("Legenda culorilor")
+                        }
+                        Section{
+                            HStack{
+                                
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://www.youtube.com/watch?v=DLj9yM-zLyc")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://developer.apple.com/tutorials/swiftui")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://developer.apple.com/documentation/swift/hashable")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://stackoverflow.com/questions/56437335/go-to-a-new-view-using-swiftui")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://www.youtube.com/watch?v=X5hy3M47OC4")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://stackoverflow.com/questions/56505692/how-to-resize-image-with-swiftui")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://forums.developer.apple.com/forums/thread/677071")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-present-a-full-screen-modal-view-using-fullscreencover")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://www.youtube.com/watch?v=NNxz_sXKrto")!)
+                                }
+                                Button("", systemImage: "link") {
+                                    openURL(URL(string: "https://www.youtube.com/watch?v=9QhhpeYKjOs")!)
+                                }
+                            }
+                        HStack{
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://stackoverflow.com/questions/57614998/swiftui-list-header-and-subheader")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://en.wikipedia.org/wiki/Renault_Twingo")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.youtube.com/watch?v=0axI-Cgg-NI&t=70s")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-make-a-fixed-size-spacer")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-play-movies-with-videoplayer")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.swiftanytime.com/blog/videoplayer-in-swiftui")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://sarunw.com/posts/how-to-render-text-with-color-gradient-in-swiftui/")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-provide-relative-sizes-using-geometryreader")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://developer.apple.com/design/human-interface-guidelines/layout#Specifications")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.youtube.com/watch?app=desktop&v=rbiof06p5lo")!)
+                            }
+                        }
+                            Text("Realizator: Groșan Claudiu")
+                            Text("Scop: Lucrare pentru atestatul profesional la informatică 2024.")
+                            
+                        }header:{
+                            Text("Bibliografie și alte informații")
                         }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
                 .tabItem {
-                    Label("Despre", systemImage: "info.circle.fill" )
+                    Label("Informații utile", systemImage: "info.circle.fill" )
                 }
-                
             }
         }
     }

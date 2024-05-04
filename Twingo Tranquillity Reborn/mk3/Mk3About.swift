@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+extension Color{
+   public static var customPurple:Color{
+      return Color(UIColor(red:60/255, green: 0/255, blue:110/255, alpha: 1.0))
+   }
+}
+
+
+
 struct Mk3About: View {
         var body: some View {
             GeometryReader { geometry in

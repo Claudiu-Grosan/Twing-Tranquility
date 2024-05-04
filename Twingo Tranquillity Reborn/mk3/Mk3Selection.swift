@@ -25,7 +25,7 @@ struct Mk3Selection: View {
                             .tabItem {
                                 Label("Pre-Facelift", image: "mk3Front" )
                             }
-                        Mk2FaceliftAbout_iPad()//modify for mk3
+                        Mk3FaceliftAbout_iPad()//modify for mk3
                             .tabItem{
                                 Label("Facelift", image: "mk3FrontF" )
                             }

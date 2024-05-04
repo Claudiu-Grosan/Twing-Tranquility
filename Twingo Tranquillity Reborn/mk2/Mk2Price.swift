@@ -32,7 +32,7 @@ struct Mk2Price: View {
                 
                 Image("mk2drvi")
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .clipShape(Circle())
                     .overlay{
                         Circle().strokeBorder(
@@ -40,7 +40,7 @@ struct Mk2Price: View {
                             lineWidth: 6
                         )
                     }
-                    .frame(width: geometry.size.width*0.76, height: geometry.size.height*0.398)
+                    .frame(height: geometry.size.height*0.45)
                     .shadow(radius:5)
                 Spacer()
                     .frame(height:geometry.size.height*0.11)

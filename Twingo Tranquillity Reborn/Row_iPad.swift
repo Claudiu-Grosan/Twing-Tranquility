@@ -63,7 +63,7 @@ struct Row_iPad: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented1, content: Mk1Selection.init)
+                        .fullScreenCover(isPresented: $isPresented1, content: Mk1About_iPad.init)
                         //Necessary to be able to open future pages of the project
                         
                         
@@ -89,7 +89,7 @@ struct Row_iPad: View {
                                 }
                             }
                         }
-                        .fullScreenCover(isPresented: $isPresented2, content: Mk1SelectionSpecs.init)
+                        .fullScreenCover(isPresented: $isPresented2, content: Mk1Specs_iPad.init)
                         Button(action:{
                             isPresented3.toggle() //button action/animation
                         }){
@@ -170,11 +170,11 @@ struct Row_iPad: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented5, content: Mk2SelectionSpecs.init)
+                            .fullScreenCover(isPresented: $isPresented5, content: Mk2Specs_iPad.init)
                         }
                         ZStack{
                             Button(action:{
-                                isPresented5.toggle()
+                                isPresented6.toggle()
                             }){
                                 ZStack{
                                     Rectangle()
@@ -193,7 +193,7 @@ struct Row_iPad: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented5, content: Mk2SelectionSpecs.init)
+                            .fullScreenCover(isPresented: $isPresented6, content: Mk2Price.init)
                         }
                         Spacer()
                             .frame(width: geometry.size.width*0.03)
@@ -230,7 +230,7 @@ struct Row_iPad: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented7, content: Mk2Selection.init)
+                            .fullScreenCover(isPresented: $isPresented7, content: Mk3Selection.init)
                         }
                         ZStack{
                             Button(action:{
@@ -254,7 +254,7 @@ struct Row_iPad: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented8, content: Mk3SelectionSpecs.init)
+                            .fullScreenCover(isPresented: $isPresented8, content: Mk3Specs_iPad.init)
                         }
                         ZStack{
                             Button(action:{
@@ -277,7 +277,7 @@ struct Row_iPad: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented9, content: Mk2SelectionPrice.init)
+                            .fullScreenCover(isPresented: $isPresented9, content: Mk3Price.init)
                         }
                         Spacer()
                             .frame(width: geometry.size.width*0.03)

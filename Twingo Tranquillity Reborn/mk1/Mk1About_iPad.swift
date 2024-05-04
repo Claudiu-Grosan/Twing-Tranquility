@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct Mk1About_iPad: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         GeometryReader { geometry in
             VStack{
+                Button ("înapoi", systemImage: "chevron.backward" ){
+                    dismiss()
+                }
+                .frame(width: geometry.size.width*0.9, alignment: .leading)
+                .buttonStyle(.bordered)
                 
                 Text("Despre primul Twingo")
                     .foregroundColor(Color.customGreen)
@@ -39,13 +45,13 @@ struct Mk1About_iPad: View {
                             Image("mk1interior")
                                 .resizable()
                                 .clipShape(Circle())
-                                .scaledToFit()
+                                .scaledToFill()
                                 .overlay{
                                     Circle().stroke(Color.customGreen, lineWidth: 10)
                                 }
                                 .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.6)
                             Spacer()
-                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.65)
+                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.61)
                         }
                         
                     })

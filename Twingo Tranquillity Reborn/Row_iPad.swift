@@ -55,9 +55,11 @@ struct Row_iPad: View {
                                     .foregroundColor(Color.customGreen)
                                 //Yeah, VStack in ZStack in Button, in ZStack, in HStack, in Scroll View 💀
                                 VStack{
+                                    Spacer()
+                                        .frame(height: geometry.size.height*0.015)
                                     Image("mk1")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.21, height:geometry.size.height*0.12)
+                                        .frame(width: geometry.size.width*0.22, height:geometry.size.height*0.105)
                                     Text("Despre")
                                         .foregroundColor(Color.white)
                                 }

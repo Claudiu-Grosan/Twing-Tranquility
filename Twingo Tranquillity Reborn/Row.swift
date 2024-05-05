@@ -55,9 +55,11 @@ struct Row: View {
                                     .foregroundColor(Color.customGreen)
                                 //Yeah, VStack in ZStack in Button, in ZStack, in HStack, in Scroll View 💀
                                 VStack{
+                                    Spacer()
+                                        .frame(height: geometry.size.height*0.01)
                                     Image("mk1")
                                         .resizable()
-                                        .frame(width: geometry.size.width*0.23, height:geometry.size.height*0.1)
+                                        .frame(width: geometry.size.width*0.26, height:geometry.size.height*0.09)
                                     Text("Despre")
                                         .foregroundColor(Color.white)
                                 }
@@ -276,7 +278,7 @@ struct Row: View {
                                     }
                                 }
                             }
-                            .fullScreenCover(isPresented: $isPresented9, content: Mk2Price.init)
+                            .fullScreenCover(isPresented: $isPresented9, content: Mk3Price.init)
                         }
                         Spacer()
                             .frame(width: geometry.size.width*0.03)

@@ -14,7 +14,6 @@ extension Color{
 }
 
 
-
 struct Mk3About: View {
         var body: some View {
             GeometryReader { geometry in

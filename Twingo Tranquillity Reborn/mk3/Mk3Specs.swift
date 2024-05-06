@@ -17,6 +17,7 @@ struct Mk3Specs: View {
                 }
                 .frame(width: geometry.size.width*0.91, alignment: .leading)
                 .buttonStyle(.bordered)
+                .foregroundStyle(LinearGradient(colors: [.customPurple, .customYellow], startPoint: .leading, endPoint: .trailing))
                 Spacer()
                     .frame(height:geometry.size.height*0.03)
                 
@@ -33,6 +34,7 @@ struct Mk3Specs: View {
                 Text("Motoare pe benzină")
                     .font(.subheadline)
                     .frame(width: geometry.size.width*0.9, height:geometry.size.height*0.01, alignment: .leading)
+                
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     
                     HStack{

@@ -28,6 +28,8 @@ struct Row_iPad: View {
                     .fontWeight(.black)
                     .fontDesign(.rounded)
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
+                    .foregroundStyle(
+                        LinearGradient(colors: [.customGreen, .customBlue, .customPink,.customPurple, .customYellow], startPoint: .leading, endPoint: .trailing))
                 
                 Divider()
                 

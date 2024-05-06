@@ -18,11 +18,13 @@ struct Mk1About: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
+                
                     Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                     .buttonStyle(.bordered)
+                    .tint(.customGreen)
                 Text("Despre primul Twingo")
                     .foregroundColor(Color.customGreen)
                     .font(.title)

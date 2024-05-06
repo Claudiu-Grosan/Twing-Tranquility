@@ -44,7 +44,7 @@ struct ContentView: View {
                 }
                 .onAppear{
                     player.play()
-                    //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that timeh
+                    //used to loop the video, it adds the observer to check for the video duration and then restarts it when it hits that time
                     NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil) {
                         notif in // 3
                         player.seek(to: .zero) // 4

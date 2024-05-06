@@ -35,7 +35,8 @@ struct Row: View {
                     .font(.subheadline)
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                 
-                //First Scroll View, used for the mk1
+                //First Scroll View, used for the mk1About
+                
                 ScrollView(.horizontal, showsIndicators: false, content:{
                     //HStack to group the rectangles and items
                     HStack{
@@ -45,7 +46,7 @@ struct Row: View {
                         Button(action:{
                             isPresented1.toggle() //button action/animation
                         }){
-                            //Button design basically, here a ZStack to once again overlap shit
+                            //Button design basically, here a ZStack to once again overlap things
                             ZStack{
                                 Rectangle()
                                     .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.17)
@@ -53,7 +54,7 @@ struct Row: View {
                                     .shadow(radius: 10)
                                     .padding(5)
                                     .foregroundColor(Color.customGreen)
-                                //Yeah, VStack in ZStack in Button, in ZStack, in HStack, in Scroll View 💀
+                                
                                 VStack{
                                     Spacer()
                                         .frame(height: geometry.size.height*0.01)

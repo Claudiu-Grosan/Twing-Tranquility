@@ -20,6 +20,8 @@ struct ContentView_iPad: View {
         GeometryReader{ geometry in
         TabView(selection: $test){
                 VStack{
+                    Spacer()
+                        .frame(height: geometry.size.height*0.04)
                     Button ("", systemImage: sound ){
                         test.toggle()
                         player.isMuted.toggle()//Button that mutes the playback of the main video
@@ -40,10 +42,9 @@ struct ContentView_iPad: View {
                     .fontWeight(.black)
                     .fontDesign(.rounded)
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
-                    Spacer()
-                        .frame(height: geometry.size.height*0.05)
+                    
                     VideoPlayer(player: player)
-                        .frame(width: 487.5, height: 866.6)
+                        .frame(width: 443.182, height: 787.82)
                         .cornerRadius(10)
                         .disabled(true)
                     
@@ -201,6 +202,9 @@ struct ContentView_iPad: View {
                             }
                             Button("", systemImage: "link") {
                                 openURL(URL(string: "https://www.youtube.com/watch?app=desktop&v=rbiof06p5lo")!)
+                            }
+                            Button("", systemImage: "link") {
+                                openURL(URL(string: "https://www.ultimatespecs.com/car-specs/Renault-models/Renault-Twingo")!)
                             }
                         }
                             Text("Realizator: Groșan Claudiu")

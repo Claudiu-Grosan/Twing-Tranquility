@@ -11,13 +11,16 @@ struct Mk1Specs_iPad: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         GeometryReader { geometry in
+            
             VStack{
+                Spacer()
+                    .frame(height: geometry.size.height*0.04)
                 Button ("înapoi", systemImage: "chevron.backward" ){
                     dismiss()
                 }
-                .frame(width: geometry.size.width*0.9, alignment: .leading)
+                .frame(width: geometry.size.width*0.8, alignment: .leading)
                 .buttonStyle(.bordered)
-                
+                .tint(.customGreen)
                 Spacer()
                     .frame(height:55)
                 Text("Specificații pentru prima generație de Twingo")

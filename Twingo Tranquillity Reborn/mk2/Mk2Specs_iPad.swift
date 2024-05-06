@@ -12,11 +12,14 @@ struct Mk2Specs_iPad: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
+                Spacer()
+                    .frame(height: geometry.size.height*0.04)
                 Button ("înapoi", systemImage: "chevron.backward" ){
                     dismiss()
                 }
                 .frame(width: geometry.size.width*0.95, alignment: .leading)
                 .buttonStyle(.bordered)
+                .foregroundStyle(LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing))
                 Spacer()
                     .frame(height:geometry.size.height*0.1)
                 

@@ -10,7 +10,6 @@
 		692EC6D92BC1FDC90090FE3C /* Mk2Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692EC6D82BC1FDC90090FE3C /* Mk2Price.swift */; };
 		69326EB92BAB145700C18FCE /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69326EB82BAB145700C18FCE /* Row.swift */; };
 		694477302BC733C600FD2F4C /* Mk1About_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */; };
-		694477322BC73F3700FD2F4C /* Mk1Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694477312BC73F3700FD2F4C /* Mk1Selection.swift */; };
 		69696C9F2BE65547000DD008 /* Mk3FaceliftAbout_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69696C9E2BE65547000DD008 /* Mk3FaceliftAbout_iPad.swift */; };
 		696B77662BB9A39500B257D4 /* liberte.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 696B77652BB9A39500B257D4 /* liberte.mp4 */; };
 		6973DB292BE40B160032A43B /* Mk3About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973DB282BE40B160032A43B /* Mk3About.swift */; };
@@ -33,7 +32,6 @@
 		69B4B7FC2BE54F00000A5734 /* Mk3FaceliftAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4B7FB2BE54F00000A5734 /* Mk3FaceliftAbout.swift */; };
 		69B553592BB887B900A8E11C /* Mk1Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B553582BB887B900A8E11C /* Mk1Specs.swift */; };
 		69B8639D2BC7C66900815F10 /* Mk1Specs_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */; };
-		69B8639F2BC7C81300815F10 /* Mk1SelectionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */; };
 		69BE9B7A2BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */; };
 		69BE9B7C2BA5DEB0000D9236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */; };
 		69BE9B7E2BA5DEB2000D9236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BE9B7D2BA5DEB2000D9236 /* Assets.xcassets */; };
@@ -65,7 +63,6 @@
 		692EC6D82BC1FDC90090FE3C /* Mk2Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk2Price.swift; sourceTree = "<group>"; };
 		69326EB82BAB145700C18FCE /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1About_iPad.swift; sourceTree = "<group>"; };
-		694477312BC73F3700FD2F4C /* Mk1Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Selection.swift; sourceTree = "<group>"; };
 		69696C9E2BE65547000DD008 /* Mk3FaceliftAbout_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3FaceliftAbout_iPad.swift; sourceTree = "<group>"; };
 		696B77652BB9A39500B257D4 /* liberte.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liberte.mp4; sourceTree = "<group>"; };
 		6973DB282BE40B160032A43B /* Mk3About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3About.swift; sourceTree = "<group>"; };
@@ -88,7 +85,6 @@
 		69B4B7FB2BE54F00000A5734 /* Mk3FaceliftAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk3FaceliftAbout.swift; sourceTree = "<group>"; };
 		69B553582BB887B900A8E11C /* Mk1Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Specs.swift; sourceTree = "<group>"; };
 		69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1Specs_iPad.swift; sourceTree = "<group>"; };
-		69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mk1SelectionSpecs.swift; sourceTree = "<group>"; };
 		69BE9B762BA5DEB0000D9236 /* Twingo Tranquillity Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twingo Tranquillity Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BE9B792BA5DEB0000D9236 /* Twingo_Tranquillity_RebornApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twingo_Tranquillity_RebornApp.swift; sourceTree = "<group>"; };
 		69BE9B7B2BA5DEB0000D9236 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,8 +152,6 @@
 				699F6DFE2BAD86D40090EF8C /* Mk1About.swift */,
 				69B553582BB887B900A8E11C /* Mk1Specs.swift */,
 				698E54022BBC4A1700E2B470 /* Mk1Price.swift */,
-				694477312BC73F3700FD2F4C /* Mk1Selection.swift */,
-				69B8639E2BC7C81300815F10 /* Mk1SelectionSpecs.swift */,
 				6944772F2BC733C600FD2F4C /* Mk1About_iPad.swift */,
 				69B8639C2BC7C66900815F10 /* Mk1Specs_iPad.swift */,
 			);
@@ -383,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B8639D2BC7C66900815F10 /* Mk1Specs_iPad.swift in Sources */,
-				69B8639F2BC7C81300815F10 /* Mk1SelectionSpecs.swift in Sources */,
 				69A06FBD2BC85F760044EC2B /* ContentView_iPad.swift in Sources */,
 				698E54032BBC4A1700E2B470 /* Mk1Price.swift in Sources */,
 				69B553592BB887B900A8E11C /* Mk1Specs.swift in Sources */,
@@ -407,7 +400,6 @@
 				697B56DB2BBEF1FE005D7827 /* Mk2FaceliftAbout.swift in Sources */,
 				69B1CBCD2BC57A6000101484 /* Mk2Specs_iPad.swift in Sources */,
 				699A4E7F2BC43A7500553A5D /* Mk2Selection.swift in Sources */,
-				694477322BC73F3700FD2F4C /* Mk1Selection.swift in Sources */,
 				692EC6D92BC1FDC90090FE3C /* Mk2Price.swift in Sources */,
 				6973DB2D2BE425F10032A43B /* Mk3Selection.swift in Sources */,
 				699A4E812BC43B8F00553A5D /* Mk2About_iPad.swift in Sources */,
@@ -574,6 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twingo Tranquillity Reborn/Preview Content\"";
+				DEVELOPMENT_TEAM = 372EL4XF4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -585,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Info.la.Rupere.Twingo-Tranquillity-Reborn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,6 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twingo Tranquillity Reborn/Preview Content\"";
+				DEVELOPMENT_TEAM = 372EL4XF4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -613,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Info.la.Rupere.Twingo-Tranquillity-Reborn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

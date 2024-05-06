@@ -13,11 +13,13 @@ struct Mk1Specs: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
+                
                 Button ("înapoi", systemImage: "chevron.backward" ){
                     dismiss()
                 }
                 .frame(width: geometry.size.width*0.9, alignment: .leading)
                 .buttonStyle(.bordered)
+                .tint(.customGreen)
                 Spacer()
                     .frame(height:55)
                 Text("Specificații pentru prima generație de Twingo")

@@ -17,6 +17,7 @@ struct Mk2Specs: View {
                 }
                 .frame(width: geometry.size.width*0.9, alignment: .leading)
                 .buttonStyle(.bordered)
+                .foregroundStyle(LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing))
                 Spacer()
                     .frame(height:geometry.size.height*0.1)
                 

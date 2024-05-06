@@ -15,19 +15,23 @@ struct Mk3Selection: View {
         if HorizontalSize == .regular{
             GeometryReader { geometry in
                 VStack{
+                    Spacer()
+                        .frame(height: geometry.size.height*0.04)
                     Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                     .buttonStyle(.bordered)
+                    .foregroundStyle(LinearGradient(colors: [.customPurple, .customYellow], startPoint: .leading, endPoint: .trailing))
                     TabView{
                         Mk3About_iPad()
                             .tabItem {
                                 Label("Pre-Facelift", image: "mk3Front" )
                             }
-                        Mk3FaceliftAbout_iPad()//modify for mk3
+                        Mk3FaceliftAbout_iPad()
                             .tabItem{
                                 Label("Facelift", image: "mk3FrontF" )
+                                
                             }
                     }
                 }
@@ -42,12 +46,13 @@ struct Mk3Selection: View {
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                     .buttonStyle(.bordered)
+                    .foregroundStyle(LinearGradient(colors: [.customPurple, .customYellow], startPoint: .leading, endPoint: .trailing))
                     TabView{
                         Mk3About()
                             .tabItem {
                                 Label("Pre-Facelift", image: "mk3Front" )
                             }
-                        Mk3FaceliftAbout()//modify in mk3
+                        Mk3FaceliftAbout()
                             .tabItem{
                                 Label("Facelift", image: "mk3FrontF" )
                             }

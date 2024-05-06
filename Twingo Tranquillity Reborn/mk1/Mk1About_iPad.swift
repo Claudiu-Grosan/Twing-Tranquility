@@ -12,11 +12,14 @@ struct Mk1About_iPad: View {
     var body: some View {
         GeometryReader { geometry in
             VStack{
+                Spacer()
+                    .frame(height: geometry.size.height*0.04)
                 Button ("înapoi", systemImage: "chevron.backward" ){
                     dismiss()
                 }
                 .frame(width: geometry.size.width*0.9, alignment: .leading)
                 .buttonStyle(.bordered)
+                .tint(.customGreen)
                 
                 Text("Despre primul Twingo")
                     .foregroundColor(Color.customGreen)
@@ -51,7 +54,7 @@ struct Mk1About_iPad: View {
                                 }
                                 .frame(width: geometry.size.width*0.94, height: geometry.size.height*0.6)
                             Spacer()
-                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.61)
+                                .frame(width: geometry.size.width*0.03,height: geometry.size.height*0.64)
                         }
                         
                     })

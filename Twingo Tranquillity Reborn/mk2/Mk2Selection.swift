@@ -15,11 +15,14 @@ struct Mk2Selection: View {
         if HorizontalSize == .regular{
             GeometryReader { geometry in
                 VStack{
+                    Spacer()
+                        .frame(height: geometry.size.height*0.04)
                     Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                     .buttonStyle(.bordered)
+                    .foregroundStyle(LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing))
                     TabView{
                         Mk2About_iPad()
                             .tabItem {
@@ -37,11 +40,13 @@ struct Mk2Selection: View {
         else{
             GeometryReader { geometry in
                 VStack{
+                    
                     Button ("înapoi", systemImage: "chevron.backward" ){
                         dismiss()
                     }
                     .frame(width: geometry.size.width*0.9, alignment: .leading)
                     .buttonStyle(.bordered)
+                    .foregroundStyle(LinearGradient(colors: [.customBlue, .customPink], startPoint: .leading, endPoint: .trailing))
                     TabView{
                         Mk2About()
                             .tabItem {
